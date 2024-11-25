@@ -5,8 +5,8 @@ description: The 23rd Belgium-Netherlands Software Evolution Workshop (Wed 20 +)
 draft: false
 tags:
   - Conferences
-image: /static/background/red_mountain.jpg
-position: 50% 20%
+image: /static/background/bridge.jpeg
+position: 50% 50%
 ---
 
 # Day 1
