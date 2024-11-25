@@ -10,7 +10,7 @@ workflow:
   rules:
     - if: $CI_COMMIT_BRANCH
 
-deploy-pages:
+pages:
   stage: deploy
   script:
     - npx quartz build 
