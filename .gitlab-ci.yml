@@ -13,8 +13,7 @@ workflow:
 deploy-pages:
   stage: deploy
   script:
-    - npx quartz build
-  pages: true
+    - npx quartz build 
   artifacts:
     paths:
       - public
