@@ -217,6 +217,8 @@ export function renderPage(
     </div>
   )
 
+  const headerImage = componentData.fileData.frontmatter?.image ?? "";
+  const headerImagePos = "object-position: " + (componentData.fileData.frontmatter?.position ?? "50% 50%") + ";";
   const lang = componentData.fileData.frontmatter?.lang ?? cfg.locale?.split("-")[0] ?? "en"
   const doc = (
     <html lang={lang}>
@@ -227,6 +229,9 @@ export function renderPage(
             {LeftComponent}
             <div class="center">
               <div class="page-header">
+                {headerImage && <div class="header-img">
+                                  <img src={headerImage} style={headerImagePos}/>
+                                </div>}
                 <Header {...componentData}>
                   {header.map((HeaderComponent) => (
                     <HeaderComponent {...componentData} />

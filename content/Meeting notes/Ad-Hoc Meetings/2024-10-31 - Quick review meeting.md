@@ -1,0 +1,16 @@
+---
+title: 2024-10-31 - Quick review meeting
+date: 2024-10-31
+image: /static/background/red_mountain.jpg
+position: 50% 20%
+tags:
+  - Meeting-Notes
+  - Year 1
+  - Ad-Hoc
+---
+
+# Discussion notes
+
+- Look into generating customized low-code development platforms for digital twins.
+- Solution space is a mix of application and technical
+- van vliet

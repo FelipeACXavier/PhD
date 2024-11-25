@@ -1,0 +1,24 @@
+---
+title: {{date:YYYY-MM-DD}} - 
+date: {{date:YYYY-MM-DD}}
+image: /static/background/suspension_bridge.jpg
+position: 50% 40%
+tags:
+  - Meeting-Notes
+  - Year 1
+  - Weekly-Sync
+---
+
+# Progress
+
+_What was done/accomplished this week?_
+
+
+# Points of discussion
+
+_What was discussed in the meeting?_
+
+
+# To do
+
+_What is the plan for next week?_
