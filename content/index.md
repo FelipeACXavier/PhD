@@ -14,7 +14,7 @@ This is the main page, it is not very interesting to be honest. However, from he
     <div class="card_img">  
       <img src="/static/background/red_bridge.jpg" alt="Administrative">
       <div class="card_overlay">
-        <h2>[[Administrative]]</h2>
+        <h2>[[./Administrative/]]</h2>
       </div>
     </div>
   </div>
@@ -22,7 +22,7 @@ This is the main page, it is not very interesting to be honest. However, from he
     <div class="card_img">  
       <img src="/static/background/bridge.jpeg" alt="Conferences">
       <div class="card_overlay">
-        <h2>[[Conferences]]</h2>
+        <h2>[[./Conferences/]]</h2>
       </div>
     </div>
   </div>
@@ -30,7 +30,7 @@ This is the main page, it is not very interesting to be honest. However, from he
     <div class="card_img">  
       <img src="/static/background/village.jpeg" alt="Courses">
       <div class="card_overlay">
-        <h2>[[Courses]]</h2>
+        <h2>[[./Courses/]]</h2>
       </div>
     </div>
   </div>
@@ -38,7 +38,7 @@ This is the main page, it is not very interesting to be honest. However, from he
     <div class="card_img">  
       <img src="/static/background/red_mountain.jpg" alt="Meeting Notes">
       <div class="card_overlay">
-        <h2>[[Meeting Notes]]</h2>
+        <h2>[[./Meeting-notes/]]</h2>
       </div>
     </div>
   </div>
@@ -46,7 +46,7 @@ This is the main page, it is not very interesting to be honest. However, from he
     <div class="card_img">  
       <img src="/static/background/blue_mountain.jpg" alt="Papers">
       <div class="card_overlay">
-        <h2>[[Papers]]</h2>
+        <h2>[[./Papers/]]</h2>
       </div>
     </div>
   </div>
@@ -62,7 +62,7 @@ This is the main page, it is not very interesting to be honest. However, from he
     <div class="card_img">  
       <img src="/static/background/wave.jpg" alt="Year 1">
       <div class="card_overlay">
-        <h2>[[Year 1]]</h2>
+        <h2>[[./Years/Year-1/]]</h2>
       </div>
     </div>
   </div>

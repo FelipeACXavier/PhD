@@ -1,5 +1,5 @@
 ---
-title: Meeting Notes
+title: Meeting notes
 description: These are the notes related to meetings held through the PhD
 draft: false
 image: /static/background/red_mountain.jpg

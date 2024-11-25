@@ -2,6 +2,8 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+// Left side menu
 .page>#quartz-body .sidebar.left {
   gap: 10pt !important;
 }
@@ -23,6 +25,7 @@
   }
 }
 
+// My own constructs
 .caption-img-container {
   text-align: center !important;
 
@@ -41,6 +44,7 @@
   }
 }
 
+// Background (top) image that appears on all pages
 .header-img {
   grid-area: 1 / 1;
   width: 100%;
@@ -58,6 +62,7 @@
   }
 }
 
+// Fix darkmode button to top right
 .darkmode {
   @media all and not ($mobile) {
     position: fixed !important;
@@ -66,11 +71,13 @@
   }
 }
 
+// Don't show the ugly blue for links
 a, a:hover, a:visited, a:active {
   color: inherit !important;
   text-decoration: none;
 }
 
+// Fix table for list pages (tag pages)
 .page-listing {
   li {
     .section {
@@ -90,12 +97,6 @@ a, a:hover, a:visited, a:active {
 // ===========================
 $image-radius: 30px;
 
-@mixin mQ($px){
-@media screen and (max-width:$px){
-@content;
-}
-}
-
 section {
   display: grid;
   grid-template-columns: 33% 33% 33%;
@@ -106,16 +107,16 @@ section {
   grid-template-rows: 33% 33% 33%;
   z-index: -5 !important;
 
-  @include mQ(470px){
-    grid-template-columns:repeat(2,1fr);
-    grid-template-rows: repeat(3, 35%);
+  @media all and not ($desktop) {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
   }
 
   .card {
     border-radius: $image-radius;
     height: 200px;
 
-    @include mQ(470px){
+    @media all and not ($desktop) {
       grid-column: span 1;
     }
 
