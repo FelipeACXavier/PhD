@@ -25,21 +25,49 @@
   }
 }
 
+.img-grid {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+}
+
+.img-grid-a-3 {
+  grid-template:
+  "a c"
+  "b c" / 60% 40%;
+}
+
+.img-grid-a-5 {
+  grid-template:
+    "a c"
+    "a d"
+    "b e" / auto;
+}
+
+.justify-text {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 // My own constructs
 .caption-img-container {
-  text-align: center !important;
-
   .caption-img {
-    display: inline-block;
-    text-align: left;
+    display: grid;
+    grid-template:
+      "image" auto
+      "caption" auto / auto;
 
     img {
+      grid-area: image;
       margin: 5px auto 0px auto !important;
     }
 
     figcaption {
+      grid-area: caption;
       font-style: italic;
       max-width: fit-content;
+      text-align: justify;
+      text-justify: inter-word;
     }
   }
 }
@@ -159,3 +187,25 @@ section {
   }
 }
 // ===========================
+// Modifiers
+// ===========================
+
+.w-25 {
+  width: 25% !important;
+}
+
+.w-50 {
+  width: 50% !important;
+}
+
+.w-75 {
+  width: 75% !important;
+}
+
+.w-90 {
+  width: 90% !important;
+}
+
+.w-100 {
+  width: 100% !important;
+}

@@ -73,9 +73,13 @@ This architecture aims to:
 3. Contributes to a better reuse of software components developed with it.
 4. Support evolution of such systems.
 
-![[/image 11.png|image 11.png]]
 
-Excerpt from [Beningo et al. 2022](https://link.springer.com/10.1007/978-1-4842-8279-3)
+<div class="caption-img-container">
+  <div class="caption-img">
+    <img src=/static/images/es_best_practices.png />
+    <figcaption>Excerpt from <a href="https://link.springer.com/10.1007/978-1-4842-8279-3">Beningo et al. 2022</a></figcaption>
+  </div>
+</div>
 
 ## 3. Stakeholders and their concerns
 
@@ -100,35 +104,56 @@ Excerpt from [Beningo et al. 2022](https://link.springer.com/10.1007/978-1-4842-
 
 The aforementioned architecture itself looks as such (The information and communication managers are not shown due to their highly specific requirements depending on the application):
 
-![[/image 1 3.png|image 1 3.png]]
+<div class="img-grid img-grid-a-5">
+	<div class="caption-img-container"  style="grid-area: a">
+		<div class="caption-img">
+			<img src=/static/images/conceptual_view_of_simus.png />
+			<figcaption>Conceptual View of SiMuS</figcaption>
+		</div>
+	</div>
+	<div class="caption-img-container"  style="grid-area: b">
+		<div class="caption-img">
+			<img src=/static/images/global_view_of_simus.png />
+			<figcaption>Global view of SiMuS</figcaption>
+		</div>
+	</div>
+	<div class="caption-img-container"  style="grid-area: c">
+		<div class="caption-img">
+			<img src=/static/images/devices_manager_SiMuS.png />
+			<figcaption>Structural View (Devices Manager) of SiMuS</figcaption>
+		</div>
+	</div>
+	<div class="caption-img-container"  style="grid-area: d">
+		<div class="caption-img">
+			<img src=/static/images/evolution_manager_SiMuS.png />
+			<figcaption>Structural View (Evolution Manager) of SiMuS</figcaption>
+		</div>
+	</div>
+	<div class="caption-img-container" style="grid-area: e">
+		<div class="caption-img">
+			<img src=/static/images/controller_view_SiMuS.png />
+			<figcaption>Structural View (Controller) of SiMuS</figcaption>
+		</div>
+	</div>
+</div>
 
-Conceptual View of SiMuS
-
-![[/image 2 3.png|image 2 3.png]]
-
-Global view of SiMuS
-
-![[/image 3 3.png|image 3 3.png]]
-
-Structural View (Devices Manager) of SiMuS
-
-![[/image 4 3.png|image 4 3.png]]
-
-Structural View (Evolution Manager) of SiMuS
-
-![[/image 5 3.png|image 5 3.png]]
-
-Structural View (Controller) of SiMuS
-
-As mentioned above, we can combine this reference architecture with the layered device architecture presented by [Eklund et al. 2014](https://linkinghub.elsevier.com/retrieve/pii/S0164121214000211) to have a more complete and modular architecture. Although, this might only be necessary in the source code viewpoint.
-
-![[/image 6 3.png|image 6 3.png]]
-
-Source code viewpoint
-
-![[/image 7 3.png|image 7 3.png]]
-
-The pattern defining how hardware devices such as sensors and actuators are abstracted in isolated processes allowing for independent development, testing and deployment of new device driver software.
+<div class="img-grid img-grid-a-3">
+	<div class="justify-text" style="grid-area: a">
+		As mentioned above, we can combine this reference architecture with the layered device architecture presented by <a href="https://linkinghub.elsevier.com/retrieve/pii/S0164121214000211">Eklund et al. 2014</a> to have a more complete and modular architecture. Although, this might only be necessary in the source code viewpoint.
+	</div>
+	<div class="caption-img-container"  style="grid-area: b">
+		<div class="caption-img">
+			<img src=/static/images/source_code_viewpoint.png />
+			<figcaption>Source code viewpoint</figcaption>
+		</div>
+	</div>
+	<div class="caption-img-container" style="grid-area: c">
+		<div class="caption-img">
+			<img src=/static/images/physically_controlled_device.png />
+			<figcaption>The pattern defining how hardware devices such as sensors and actuators are abstracted in isolated processes allowing for independent development, testing and deployment of new device driver software.</figcaption>
+		</div>
+	</div>
+</div>
 
 [Beningo et al. 2022](https://link.springer.com/10.1007/978-1-4842-8279-3) presents four main architectures used in embedded systems:
 
@@ -144,53 +169,59 @@ We can argue that these could be combined, since both the event-driven and micro
 ---
 
 Here we present a few of the studied architectures and determine how they would fit the schema.
-
-1. Communication Manager (\#DF5452)
+1. <span style="color:rgb(233, 84, 82)">Communication Manager (#DF5452)</span>
     
     is the module responsible for providing communication among robots or between a robot and the central machine. Its main functionality is to send/receive information, highlighting that this information is encrypted and comprises not only system data (e.g., location, maps, and warnings) but also modules and interfaces to evolve the system;
     
-2. Information Manager (\#C77D48)
+2. <span style="color:rgb(199, 125, 72)">Information Manager (#C77D48)</span>
     
     is the module responsible for persisting all data of the system (e.g., maps, protocols, interfaces, and modules);
     
-3. Devices Manager (\#529E72)
+3. <span style="color:rgb(82, 158, 114)">Devices Manager (#529E72)</span>
     
     is responsible for managing sensors (Sensors Manager), actuators (Actuators Manager), and resources (Resources Manager) of a robot. As observed in Figure 5, it provides the access interfaces to these elements, as well as testing data of these devices. The mentioned sub-modules provide basic functionalities to Controller and are capable of responding whether a specific interface is available or not. The Self-test module is capable of request all necessary data to perform the test and provide them to the Controller;
     
-4. Evolution Manager (\#9D68D3)
+4. <span style="color:rgb(157, 104, 211)">Evolution Manager (#9D68D3)</span>
     
     is responsible for managing the runtime evolution of the system, i.e., the acquisition, delivery, and validation of modules and interfaces. For example, it permits the robot conclude the same task in different ways, since it is possible to find different modules that perform the same task and the required interfaces to use them. As shown in Figure 6, Modules Manager and Interfaces Manager are responsible for coordinating these tasks, as well as provide high-level functionalities to the Controller that searches and installs them, or informs their unavailability;
     
-5. Controller (\#5E87C9)
+5. <span style="color:rgb(94, 135, 201)">Controller (#5E87C9)</span>
     
     is responsible for controlling the robot, i.e., it is capable of taking measures to achieve the goal of the system. Thereunto, it plans and executes the necessary tasks, orchestrating the other modules (Communication Manager, Information Manager, Devices Manager, and Evolution Manager). This is the most complex module, since it depends on the others and has an inner complexity. Despite the dependence, the amount of exchanged messages is minimized due to the encapsulation of the functionalities.
     
-    ## Examples
-    
-    ---
-    
-    - _A unified software architecture for embedded systems_ ([Petitjean et al. 2004](https://ieeexplore.ieee.org/abstract/document/1571869))
-        
-        This architecture focuses on the lower layer of the reference architecture, it comprises only of the Devices Manager.
-        
-        ![[/image 8 3.png|image 8 3.png]]
-        
-    - _A Model-Based Approach for Common Representation and Description of Robotics Software Architectures (_[Monthe et al. 2022](https://www.mdpi.com/2076-3417/12/6/2982))
-        
-        ![[/image 9 2.png|image 9 2.png]]
-        
-    - _A Reference Software Architecture to Support Unmanned Aircraft Integration in the National Airspace System (_[Heisey et al. 2013](https://doi.org/10.1007/s10846-012-9691-8)_)_
-        
-        ![[/image 10 2.png|image 10 2.png]]
-        
-    - _A Generic Software Architecture for a Domain Specific Distributed Embedded System (_[Kumar et al.](https://www.zotero.org/felipeacxavier/items/4GVQM84X/attachment/USPYYGG4/reader) )
-        
-        ![[/image 11 2.png|image 11 2.png]]
-        
-    
-
-# Possible generic architectures for embedded systems
+## Examples
 
 ---
 
-[https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=https%3A%2F%2Fapp.diagrams.net%2F%23G1Mv8zIJa7Kp4Wpx5IUyvLL7eopQJVsXuY%23%257B%2522pageId%2522%253A%2522uMLv21HmqayJzXqscNhI%2522%257D&layers=1&nav=1#G1Mv8zIJa7Kp4Wpx5IUyvLL7eopQJVsXuY](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=https%3A%2F%2Fapp.diagrams.net%2F%23G1Mv8zIJa7Kp4Wpx5IUyvLL7eopQJVsXuY%23%257B%2522pageId%2522%253A%2522uMLv21HmqayJzXqscNhI%2522%257D&layers=1&nav=1#G1Mv8zIJa7Kp4Wpx5IUyvLL7eopQJVsXuY)
+- _A unified software architecture for embedded systems_ ([Petitjean et al. 2004](https://ieeexplore.ieee.org/abstract/document/1571869))
+
+	<div class="caption-img-container">
+		<div class="caption-img w-90">
+			<img src=/static/images/petit_jean_2004.png/>
+		</div>
+	</div>
+
+- _A Model-Based Approach for Common Representation and Description of Robotics Software Architectures (_[Monthe et al. 2022](https://www.mdpi.com/2076-3417/12/6/2982))
+
+	<div class="caption-img-container">
+		<div class="caption-img w-90">
+			<img src=/static/images/monthe_2022.png/>
+		</div>
+	</div>
+
+
+- _A Reference Software Architecture to Support Unmanned Aircraft Integration in the National Airspace System (_[Heisey et al. 2013](https://doi.org/10.1007/s10846-012-9691-8)_)_
+
+	<div class="caption-img-container">
+		  <div class="caption-img w-90">
+		    <img src=/static/images/helsey_2013.png/>
+		  </div>
+	</div>
+
+- _A Generic Software Architecture for a Domain Specific Distributed Embedded System (_[Kumar  et al. 2007](https://d1wqtxts1xzle7.cloudfront.net/57738320/2.A_genneric_Architetcure-libre.pdf?1541926903=&response-content-disposition=inline%3B+filename%3DA_Generic_Software_Architecture_for_a_Do.pdf&Expires=1732661954&Signature=SWl6M1B3ehq~aGsixKFoaHZ79fJidL-8GfHJD67rxy6gwOnDoVdAvpj87sv31GGlBCUfLTx1gd~pf2epJo8sam42vPKT0qcuLfcAiWn4DcE7JioUd4pKZp3jJF1~FGsOEH8KQv8UmyV35k03-Cbi5vBe7BNTWwWv95GrfdvTzg6am3YuC-hQQ~ojtrhOVPN06UUUMPonQa8We13QXC9hrn~GUDwjFb6e5-a~egBEgQ1WjzsQwKSUJ07-S94eBgpw2ynLLN10WrA37UATg-PVo1c1hh37MJAtA8x3eEv0se3F-R6SwDZ2cn7z~66-5QTm8L1-GYPHhwPh7ojnG04ODg__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA)_)
+
+	<div class="caption-img-container">
+		  <div class="caption-img w-90">
+		    <img src=/static/images/kumar_2007.png/>
+		  </div>
+	</div>

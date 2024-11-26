@@ -69,7 +69,8 @@ const config: QuartzConfig = {
       }),
       Plugin.ObsidianFlavoredMarkdown({
         enableInHtmlEmbed: true,
-        enableCheckbox: true
+        enableCheckbox: true,
+        comments: true,
       }),
       Plugin.GitHubFlavoredMarkdown({
         linkHeadings: false
