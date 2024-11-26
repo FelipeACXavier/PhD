@@ -21,7 +21,7 @@ tags:
         > […] the use of patterns to guide the software architecture design of real-time control systems within a trial-and-error approach has not been thoroughly explored in the literature.
         
     - Therefore, I think their focus is on this “trial-and-error” approach.
-2. Some of the citations are not very reliable, e.g., [7]→ ==maybe it is fine for this this type of paper?==
+2. Some of the citations are not very reliable, e.g., [7]→ maybe it is fine for this this type of paper?
 3. The process is well-explained.
 4. Table 1 mentions 6 patterns but only 2 are described in section 4.2. I don’t see any explanation why only the two shown were chosen.
 5. Stylistic(?)

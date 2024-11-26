@@ -67,7 +67,7 @@ tags:
 
 - Above, **behavior** defines the behavior of the _ihello_bool_ interface.
     - It is possible to have internal variables `bool idle = true;`
-    - `[idle]` guarantees that the following block given that `idle == true`
+    - `[idle]` guarantees that the following block given that `idle  true`
     - `on hello:` executes the following block once the "hello message" is received.
 - The generated C++ code is fairly straight forward. The different components are linked through the specified interfaces thanks to std::function's
 - How do they handle inter-process communication? The power from such a tool would appear once different components and systems started talking to one another.

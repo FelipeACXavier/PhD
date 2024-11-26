@@ -5,7 +5,6 @@ image: /static/background/boat.jpeg
 position: 50% 70%
 tags:
   - Standalone
-  - Year 1
 ---
 
 Embedded software development differs from other types of software development in several key ways:

@@ -9,11 +9,11 @@ tags:
   - Year-1
 ---
 
-## Summaries of papers of interest:
+# Summaries of papers of interest:
 
 ---
 
-### A unified software architecture for embedded systems (Petitjean et al. 2004)
+## A unified software architecture for embedded systems (Petitjean et al. 2004)
 
 - This paper seems very focused on the implementation aspects; however, the architecture can still be derived. They propose an architecture similar to what I and Michel discussed yesterday (2024-10-16), but only up to the communication level (our data sharing layer)
 
@@ -23,7 +23,7 @@ _UML class diagram of the framework_
 
 ---
 
-### A Simple and Practical Embedded Software System Architecture (Liu et al. 2020)
+## A Simple and Practical Embedded Software System Architecture (Liu et al. 2020)
 
 - This paper also seems a bit more "practical" than what we are looking for; there is already a talk about drivers and devices. Nonetheless, the architecture is still quite similar to the one proposed above. There is a clear separation of the communication and IO aspects. At least this one adds the "Application layer" which seems similar to our discussed "computing layer". It is important to note, however, that the authors explicitly mention, "The code implementation of a protocol or implementation of task scheduling should not appear in the application layer." Would then the scheduling function be present in a layer above?
     
@@ -34,7 +34,7 @@ _UML class diagram of the framework_
 
 ---
 
-### A reference architecture template for software-intensive embedded systems (Eklund et al. 2012)
+## A reference architecture template for software-intensive embedded systems (Eklund et al. 2012)
 
 - This paper seems to be more focused on requirement architecture, and, therefore, seems to once again focus on the solution space. Nonetheless, the following quote is quite nice.
 
@@ -54,7 +54,7 @@ _UML class diagram of the framework_
 
 ---
 
-### Hierarchical Design Model for Embedded Systems (Karakehayov et al. 2009)
+## Hierarchical Design Model for Embedded Systems (Karakehayov et al. 2009)
 
 - Already an interesting reference in this paper: [Wolf et al. 2010](https://www.google.com/complete/search?q=978-0-08-047500-4) which is available digitally via the library:
 
@@ -62,16 +62,16 @@ _UML class diagram of the framework_
 >  
 > [https://www-sciencedirect-com.dianus.libr.tue.nl/book/9780124105119/high-performance-embedded-computing](https://www-sciencedirect-com.dianus.libr.tue.nl/book/9780124105119/high-performance-embedded-computing)  
 
-> ==Because embedded system designers work with both hardware and software, they must study architectures broadly speaking, including hardware, software, and the  
-> relationships between the two. Hardware architecture problems may range from special-purpose hardware units as created by hardware/software co-design, micro-architectures for processors, multiprocessors, or networks of distributed processors. Software architectures determine how we can take advantage of parallelism and nondeterminism to improve performance and lower cost.  
-> ==
+> [!quote] 
+> Because embedded system designers work with both hardware and software, they must study architectures broadly speaking, including hardware, software, and the relationships between the two. Hardware architecture problems may range from special-purpose hardware units as created by hardware/software co-design, micro-architectures for processors, multiprocessors, or networks of distributed processors. Software architectures determine how we can take advantage of parallelism and nondeterminism to improve performance and lower cost.  
+
 
 - The paper is more mathematical than I expected. The model is expressed in logical notation: $D = \{A, S, R\}$﻿ where $A$﻿ is the model of the application, $S$﻿ is the model of the embedded system, and $R$﻿ is the model of the needed resources.
 - This paper, however, is once again focused on the implementation aspect of the embedded system.
 
 ---
 
-### 👍 Architectural description of embedded systems: a systematic review (Guessi et al. 2012)
+## 👍 Architectural description of embedded systems: a systematic review (Guessi et al. 2012)
 
 - First of all, nice! A paper from Brazil.
 - A review of existing architectures for embedded systems.
@@ -111,7 +111,7 @@ _UML class diagram of the framework_
 
 ---
 
-### A Reference Software Architecture to Support Unmanned Aircraft Integration in the National Airspace System (Heisey et al. 2013)
+## A Reference Software Architecture to Support Unmanned Aircraft Integration in the National Airspace System (Heisey et al. 2013)
 
 - As expected, this article focuses heavily (maybe too heavily) on unmanned aircraft. Thus, the architecture cannot be generic. Nonetheless, some of its insights might be useful.
 
@@ -128,7 +128,7 @@ Notional view of possible services in the reference architecture, subject to int
 
 ---
 
-### 👍 Towards a Formal Description of Reference Architectures for Embedded Systems (Guessi et al. 2015)
+## 👍 Towards a Formal Description of Reference Architectures for Embedded Systems (Guessi et al. 2015)
 
 - Another paper by Guessi et al. from Brazil.
 - Continuing their previous literature review, the authors now dive deeper into formal architectures.
@@ -141,7 +141,7 @@ Notional view of possible services in the reference architecture, subject to int
 
 ---
 
-### 👍 A Systematic Mapping of Architectures for Embedded Software (Antonio et al. 2012)
+## 👍 A Systematic Mapping of Architectures for Embedded Software (Antonio et al. 2012)
 
 - This paper, similarly to , divides the found architectures into formal and semi-formal groups.
     - Semi-formal:
@@ -167,12 +167,12 @@ Notional view of possible services in the reference architecture, subject to int
 
 ---
 
-### A Generic Software Architecture for a Domain Specific Distributed Embedded System (Kumar et al. )
+## A Generic Software Architecture for a Domain Specific Distributed Embedded System (Kumar et al. )
 
-- This paper describes the architecture of an embedded system that focuses on maintainability and modifiability → ==This seems to be a common trend across the studied papers.==
+- This paper describes the architecture of an embedded system that focuses on maintainability and modifiability → This seems to be a common trend across the studied papers.
 - This seems to actually focus on a more abstract view of architecture.
 - They propose a micro-kernel architecture, which greatly improves the system modifiability.
-- The divide the main architecture in 7 subsystems and propose architectures for each: →==I think that we are dealing at this level==
+- The divide the main architecture in 7 subsystems and propose architectures for each: →I think that we are dealing at this level
     - For sensors, they use a pipe architecture (I think this is an implementation detail).
     - For data pre-processing, they use batch sequential data flow style.
     - For data analysis, they use a black-board architecture.
@@ -188,12 +188,12 @@ Notional view of possible services in the reference architecture, subject to int
 
 ---
 
-### 👍 Architecture for embedded open software ecosystems (Eklund et al. 2014)
+## 👍 Architecture for embedded open software ecosystems (Eklund et al. 2014)
 
 - Very nice paper that provides a thorough description of their proposed architecture.
 - The authors of this paper once again focus on modularity and composability of the system.
 - The paper proposes a combination of layers and micro-kernel. Where hardware components are abstracted away in their own service that is then able to communicate with the orchestrator.
-- I am in doubt whether this is truly an abstract architecture or just an implementation. → ==I think this would fall in the abstract category.==
+- I am in doubt whether this is truly an abstract architecture or just an implementation. → I think this would fall in the abstract category.
 
 ![[/image 3 2.png|image 3 2.png]]
 
@@ -219,19 +219,19 @@ The pattern defining how complex aggregation and sensor fusion of hardware devic
 
 ---
 
-### Concern coverage in base station development: an empirical investigation (Pareto et al. 2012)
+## Concern coverage in base station development: an empirical investigation (Pareto et al. 2012)
 
 - A study in Ericsson to identify concerns regarding the development of architectures for embedded systems.
 - Not a lot to discuss here except that the concerns are shared with the other studied papers. The concerns are better described in the paper itself.
 
 ---
 
-### A Model-Based Approach for Common Representation and Description of Robotics Software Architectures (Monthe et al. 2022)
+## A Model-Based Approach for Common Representation and Description of Robotics Software Architectures (Monthe et al. 2022)
 
 - From the title, we see that this paper focuses on architecture for robots. However, I think it might provide some useful insight into the whole domain of embedded systems.
 - The authors propose a hybrid architecture because:
     
-    > hybrid architectures combine the reactive capabilities of behavioral architectures ==[event-based architecture]== and reasoning abilities (decision making) specific to hierarchical architectures ==[layered archietcture]==
+    > hybrid architectures combine the reactive capabilities of behavioral architectures [event-based architecture] and reasoning abilities (decision making) specific to hierarchical architectures [layered archietcture]
     
     ![[/image 5 2.png|image 5 2.png]]
     
@@ -244,11 +244,11 @@ The pattern defining how complex aggregation and sensor fusion of hardware devic
     An extract of the concepts used in the language definition.
     
 
-## Related papers
+# Related papers
 
 ---
 
-### Towards suitable description of reference architectures (Valle et al. 2021)
+## Towards suitable description of reference architectures (Valle et al. 2021)
 
 - This paper does not come from one of the more reputable sources but from PeerJ, which I had never heard before. Furthermore, it has a small number of citations (11).
 - Nonetheless, it has some interesting insights regarding “Good practices for describing reference architectures” such as:
@@ -260,7 +260,7 @@ The pattern defining how complex aggregation and sensor fusion of hardware devic
 
 ---
 
-### 👍 Consolidating a Process for the Design, Representation, and Evaluation of Reference Architectures (Nakagawa et al. 2014)
+## 👍 Consolidating a Process for the Design, Representation, and Evaluation of Reference Architectures (Nakagawa et al. 2014)
 
 - The main goal of this paper is to present the last version of a process, named ProSARA, for the building of reference architectures, focusing on how to design, represent, and evaluate reference architectures.
 - The authors then focus on the robotics domain, definitely an embedded systems use-case/domain.
@@ -276,7 +276,7 @@ The pattern defining how complex aggregation and sensor fusion of hardware devic
 
 ---
 
-### An Operational Quality Model of Embedded Software Aligned with ISO 25000 (Argotti et al. 2024)
+## An Operational Quality Model of Embedded Software Aligned with ISO 25000 (Argotti et al. 2024)
 
 - A nice literature review that focuses on operational quality of embedded software.
 - It has some good papers to look into with a focus on their practical aspects.
@@ -295,13 +295,13 @@ The pattern defining how complex aggregation and sensor fusion of hardware devic
     > In a study on the embedded system architecture, Guessi et al. SLR [32] (S20) identifies the quality requirements and constraints to be considered in the architecture and software of embedded systems. The authors identified a set of 12 architectural concerns broken down into several quality requirements: adaptability, correctness, dependency, fault tolerance, interoperability, knowledge reuse, maintainability, performance, power consumption, reliability, safety, and timing.
     
 
-### 👍 RAModel: A Reference Model for Reference Architectures (Nakagawa et al. 2012)
+## 👍 RAModel: A Reference Model for Reference Architectures (Nakagawa et al. 2012)
 
 - Creates a reference architecture for reference architectures.
 - The paper describes the necessary focus points of people creating reference architectures.
 - Zachman framework:
     
-    > ==The== ==**Zachman Framework**== ==is an enterprise== ==[ontology](https://en.wikipedia.org/wiki/Ontology_(information_science))== ==and is a fundamental structure for== ==[enterprise architecture](https://en.wikipedia.org/wiki/Enterprise_architecture)== ==which provides a formal and structured way of== ==[viewing](https://en.wikipedia.org/wiki/View_model)== ==and defining an enterprise. The ontology is a two dimensional classification schema that reflects the intersection between two historical classifications. The first are primitive interrogatives:== ==[What, How, When, Who, Where, and Why](https://en.wikipedia.org/wiki/Five_Ws)====. The second is derived from the philosophical concept of reification, the transformation of an abstract idea into an instantiation. The Zachman Framework reification transformations are: identification, definition, representation, specification, configuration and instantiation.====[[1]](https://en.wikipedia.org/wiki/Zachman_Framework\#cite_note-1)== ==The Zachman Framework is not a== ==[methodology](https://en.wikipedia.org/wiki/Methodology)== ==in that it does not imply any specific method or process for collecting, managing, or using the information that it describes;====[[2]](https://en.wikipedia.org/wiki/Zachman_Framework#cite_note-2)== ==rather, it is an ontology whereby a== ==[schema](https://en.wikipedia.org/wiki/Conceptual_model)== ==for organizing architectural artifacts (in other words, design documents, specifications, and models) is used to take into account both who the artifact targets (for example, business owner and builder) and what particular issue (for example, data and functionality) is being addressed.==
+    > The **Zachman Framework** is an enterprise [ontology](https://en.wikipedia.org/wiki/Ontology_(information_science)) and is a fundamental structure for [enterprise architecture](https://en.wikipedia.org/wiki/Enterprise_architecture) which provides a formal and structured way of [viewing](https://en.wikipedia.org/wiki/View_model) and defining an enterprise. The ontology is a two dimensional classification schema that reflects the intersection between two historical classifications. The first are primitive interrogatives: [What, How, When, Who, Where, and Why](https://en.wikipedia.org/wiki/Five_Ws). The second is derived from the philosophical concept of reification, the transformation of an abstract idea into an instantiation. The Zachman Framework reification transformations are: identification, definition, representation, specification, configuration and instantiation.[[1]](https://en.wikipedia.org/wiki/Zachman_Framework\#cite_note-1) The Zachman Framework is not a [methodology](https://en.wikipedia.org/wiki/Methodology) in that it does not imply any specific method or process for collecting, managing, or using the information that it describes;[[2]](https://en.wikipedia.org/wiki/Zachman_Framework#cite_note-2) rather, it is an ontology whereby a [schema](https://en.wikipedia.org/wiki/Conceptual_model) for organizing architectural artifacts (in other words, design documents, specifications, and models) is used to take into account both who the artifact targets (for example, business owner and builder) and what particular issue (for example, data and functionality) is being addressed.
     
     ![[/image 8 2.png|image 8 2.png]]
     
@@ -335,7 +335,7 @@ The pattern defining how complex aggregation and sensor fusion of hardware devic
 
 ---
 
-### A checklist for evaluation of reference architectures of embedded systems (Santos et al. 2013)
+## A checklist for evaluation of reference architectures of embedded systems (Santos et al. 2013)
 
 - This paper had a few formatting errors and, thus, I am not fully sure it was peer-reviewed. I am only adding it here because its checklist might be useful for our own project.
 - Example questions:
@@ -353,7 +353,7 @@ The pattern defining how complex aggregation and sensor fusion of hardware devic
 
 ---
 
-### 👍 Towards a Process to Design Aspect-Oriented Reference Architectures (Nakagawa et al. 2009)
+## 👍 Towards a Process to Design Aspect-Oriented Reference Architectures (Nakagawa et al. 2009)
 
 - Finally, the inception paper of ProSA-RA.
 - Keeping here for easy access. See

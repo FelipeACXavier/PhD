@@ -7,4 +7,4 @@ position: 50% 20%
 ---
 
 These are the notes related to ad-hoc meetings held through the PhD.
-For a more focused view, refer to [[../Meeting notes/Ad-Hoc meetings/]]
+For a more focused view, refer to [[./Meeting notes/Ad-Hoc meetings/]]

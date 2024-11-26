@@ -7,4 +7,4 @@ position: 50% 50%
 ---
 
 Notes related to the first year of my PhD.
-For a more focused view, refer to [[../Years/Year 1/]]
+For a more focused view, refer to [[./Years/Year 1/]]

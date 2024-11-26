@@ -16,7 +16,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    baseUrl: "phd-journal-009789.pages.tue.nl",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
     generateSocialImages: false,
@@ -75,10 +75,11 @@ const config: QuartzConfig = {
         linkHeadings: false
       }),
       Plugin.TableOfContents({
-        maxDepth: 2
+        maxDepth: 2,
+        collapseByDefault: true
       }),
       Plugin.CrawlLinks({
-        markdownLinkResolution: "relative",
+        markdownLinkResolution: "absolute",
         externalLinkIcon: false,
         lazyLoad: true
       }),

@@ -7,4 +7,4 @@ position: 50% 30%
 ---
 
 Notes related to paper ideas, that is, papers to be published.
-For a more focused view, refer to [[../Papers/]]
+For a more focused view, refer to [[./Papers/]]

@@ -7,4 +7,4 @@ position: 50% 70%
 ---
 
 Generic standalone notes that do not fit the other categories.
-For a complete overview, refer to [[../tags/Standalone]]
+For a complete overview, refer to [[./tags/Standalone]]

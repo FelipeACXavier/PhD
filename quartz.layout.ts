@@ -8,16 +8,23 @@ function mapExplorerTitle(node: FileNode) {
     node.displayName = node.displayName.substring(0, maximumTitleLength) + "..."
 }
 
+let explorer =  Component.Explorer({
+  title: "Pages",
+  folderDefaultState: "collapsed",
+  useSavedState: false,
+  mapFn: mapExplorerTitle
+})
+
 let graphComponent = Component.Graph({
   localGraph: {
     drag: true,
     zoom: true,
     depth: 1,
-    scale: 0.3,
-    repelForce: 0.5,
-    centerForce: 1.5,
-    linkDistance: 50,
-    fontSize: 0.2,
+    scale: 1.5,
+    repelForce: 0.8,
+    centerForce: 0.5,
+    linkDistance: 30,
+    fontSize: 0.6,
     opacityScale: 1,
     removeTags: [],
     showTags: true,
@@ -27,9 +34,9 @@ let graphComponent = Component.Graph({
     zoom: true,
     depth: -1,
     scale: 1.5,
-    repelForce: 0.1,
-    centerForce: 1.2,
-    linkDistance: 20,
+    repelForce: 0.8,
+    centerForce: 0.5,
+    linkDistance: 30,
     fontSize: 0.6,
     opacityScale: 1,
     removeTags: [],
@@ -60,7 +67,7 @@ export const defaultContentPageLayout: PageLayout = {
       resolveFrontmatterTitle: true,
       hideOnRoot: true,
       showCurrentPage: true,
-  }),
+    }),
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
@@ -71,9 +78,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Search(),
     Component.Darkmode(),
     Component.DesktopOnly(Component.RecentNotes()),
-    Component.DesktopOnly(Component.Explorer({
-      mapFn: mapExplorerTitle
-    })),
+    Component.DesktopOnly(explorer),
   ],
   right: [
     graphComponent,
@@ -101,9 +106,7 @@ export const defaultListPageLayout: PageLayout = {
     Component.Search(),
     Component.Darkmode(),
     Component.DesktopOnly(Component.RecentNotes()),
-    Component.DesktopOnly(Component.Explorer({
-      mapFn: mapExplorerTitle
-    })),
+    Component.DesktopOnly(explorer),
   ],
   right: [
     graphComponent

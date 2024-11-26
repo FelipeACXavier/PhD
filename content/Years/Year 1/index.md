@@ -7,4 +7,4 @@ position: 50% 50%
 ---
 
 Notes related to the first year of my PhD.
-For a complete overview, refer to [[../../tags/Year-1|Year 1]]
+For a complete overview, refer to [[./tags/Year-1|Year 1]]

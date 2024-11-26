@@ -19,7 +19,7 @@ Before defining the schema, we follow the steps proposed by [Nakagawa et al. 201
 
 ---
 
-Embedded systems encompass a much larger domain than, for example, just robotics; thus, I think it makes sense to use the requirements identified by [Feitosa et al. 2013](http://www.teses.usp.br/teses/disponiveis/55/55134/tde-18042013-151002/) and extend with requirements from other domains. Most, if not all of these requirements can be leveraged for embedded systems in general. In ==yellow== are the ones which cannot be generalized.
+Embedded systems encompass a much larger domain than, for example, just robotics; thus, I think it makes sense to use the requirements identified by [Feitosa et al. 2013](http://www.teses.usp.br/teses/disponiveis/55/55134/tde-18042013-151002/) and extend with requirements from other domains. Most, if not all of these requirements can be leveraged for embedded systems in general. In yellow are the ones which cannot be generalized.
 
 I will place the requirements here since they are only available in Portuguese in the original document.
 
@@ -35,9 +35,9 @@ I will place the requirements here since they are only available in Portuguese i
 6. The reference architecture must enable the development of fault-tolerant systems.
 7. The reference architecture must enable the persistence of information regarding the completion of tasks assigned to the robot.
 8. The reference architecture must enable the evolution of the system through the incorporation of new functionalities.
-9. ==The reference architecture must enable the navigation of robots controlled by systems developed based on it.==
-10. ==The reference architecture must enable the localization of robots controlled by systems developed based on it.==
-11. ==The reference architecture must enable the mapping of environments.==
+9. The reference architecture must enable the navigation of robots controlled by systems developed based on it.
+10. The reference architecture must enable the localization of robots controlled by systems developed based on it.
+11. The reference architecture must enable the mapping of environments.
 
 > [!important]  
 > How to generalize these requirements? Navigation, localization, and mapping are essentially the “task” of mobile robots; therefore, maybe redundant, these three could be encompassed as:The reference architecture must enable the completion of the tasks of robots controlled by systems developed based on it.  
@@ -132,7 +132,7 @@ The pattern defining how hardware devices such as sensors and actuators are abst
 
 [Beningo et al. 2022](https://link.springer.com/10.1007/978-1-4842-8279-3) presents four main architectures used in embedded systems:
 
-1. The Unstructured Monolithic Architecture → ==Do we even consider this?==
+1. The Unstructured Monolithic Architecture → Do we even consider this?
 2. Layered Monolithic Architectures
 3. Event-Driven Architectures
 4. Microservice Architectures
@@ -145,23 +145,23 @@ We can argue that these could be combined, since both the event-driven and micro
 
 Here we present a few of the studied architectures and determine how they would fit the schema.
 
-1. ==Communication Manager (\#DF5452)==
+1. Communication Manager (\#DF5452)
     
     is the module responsible for providing communication among robots or between a robot and the central machine. Its main functionality is to send/receive information, highlighting that this information is encrypted and comprises not only system data (e.g., location, maps, and warnings) but also modules and interfaces to evolve the system;
     
-2. ==Information Manager (\#C77D48)==
+2. Information Manager (\#C77D48)
     
     is the module responsible for persisting all data of the system (e.g., maps, protocols, interfaces, and modules);
     
-3. ==Devices Manager (\#529E72)==
+3. Devices Manager (\#529E72)
     
     is responsible for managing sensors (Sensors Manager), actuators (Actuators Manager), and resources (Resources Manager) of a robot. As observed in Figure 5, it provides the access interfaces to these elements, as well as testing data of these devices. The mentioned sub-modules provide basic functionalities to Controller and are capable of responding whether a specific interface is available or not. The Self-test module is capable of request all necessary data to perform the test and provide them to the Controller;
     
-4. ==Evolution Manager (\#9D68D3)==
+4. Evolution Manager (\#9D68D3)
     
     is responsible for managing the runtime evolution of the system, i.e., the acquisition, delivery, and validation of modules and interfaces. For example, it permits the robot conclude the same task in different ways, since it is possible to find different modules that perform the same task and the required interfaces to use them. As shown in Figure 6, Modules Manager and Interfaces Manager are responsible for coordinating these tasks, as well as provide high-level functionalities to the Controller that searches and installs them, or informs their unavailability;
     
-5. ==Controller (\#5E87C9)==
+5. Controller (\#5E87C9)
     
     is responsible for controlling the robot, i.e., it is capable of taking measures to achieve the goal of the system. Thereunto, it plans and executes the necessary tasks, orchestrating the other modules (Communication Manager, Information Manager, Devices Manager, and Evolution Manager). This is the most complex module, since it depends on the others and has an inner complexity. Despite the dependence, the amount of exchanged messages is minimized due to the encapsulation of the functionalities.
     
@@ -171,7 +171,7 @@ Here we present a few of the studied architectures and determine how they would 
     
     - _A unified software architecture for embedded systems_ ([Petitjean et al. 2004](https://ieeexplore.ieee.org/abstract/document/1571869))
         
-        This architecture focuses on the lower layer of the reference architecture, it comprises only of the ==Devices Manager==.
+        This architecture focuses on the lower layer of the reference architecture, it comprises only of the Devices Manager.
         
         ![[/image 8 3.png|image 8 3.png]]
         
