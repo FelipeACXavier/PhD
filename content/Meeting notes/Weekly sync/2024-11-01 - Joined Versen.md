@@ -1,10 +1,10 @@
 ---
 title: 2024-11-01 - Joined Versen
 date: 2024-11-01
-image: /static/background/suspension_bridge.jpg
-position: 50% 40%
+image: /static/background/red_mountain.jpg
+position: 50% 20%
 tags:
-  - Meeting-Notes
+  - Meeting-notes
   - Year 1
   - Weekly-Sync
 ---

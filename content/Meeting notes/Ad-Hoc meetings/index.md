@@ -6,4 +6,5 @@ image: /static/background/red_mountain.jpg
 position: 50% 20%
 ---
 
-These are the notes related to ad-hoc meetings meetings held through the PhD
+These are the notes related to ad-hoc meetings meetings held through the PhD.
+For a complete overview, refer to [[../../tags/Ad-Hoc]]

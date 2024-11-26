@@ -1,20 +1,20 @@
-## To be done
+---
+title: To-Do
+description: A simple to-do list to remind me of the weekly tasks 
+draft: false
+image: /static/background/snow.jpeg
+position: 50% 60%
+---
 
-- [ ] Ask access to Loek📅 2024-10-17
+# To be done
 
 
-## In progress
 
-- [ ] [[Explore the landscape of development approaches]]
+# In progress
 
 
-## Done
 
-- [ ] Explore dezyne🔼 🛫 2024-10-14
-- [ ] Explore metacase ⏫ ➕ 2024-10-11
-- [ ] Ask Loek for his contact on the sport team🔼 🛫 2024-10-17
-- [ ] Create recurring meeting⏫ 📅 2024-10-17
-
+# Done
 
 
 

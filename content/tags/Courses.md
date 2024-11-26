@@ -8,4 +8,4 @@ position: 50% 60%
 ---
 
 These are the notes related to attended courses throughout the PhD.
-For a complete overview, refer to [[../tags/Courses]]
+For a more focused view, refer to [[../Courses/]]

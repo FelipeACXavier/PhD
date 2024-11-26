@@ -1,10 +1,10 @@
 ---
 title: {{date:YYYY-MM-DD}} - 
 date: {{date:YYYY-MM-DD}}
-image: /static/background/suspension_bridge.jpg
+image: /static/background/red_mountain.jpg
 position: 50% 40%
 tags:
-  - Meeting-Notes
+  - Meeting-notes
   - Year 1
   - Weekly-Sync
 ---

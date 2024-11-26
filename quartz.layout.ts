@@ -7,6 +7,36 @@ function mapExplorerTitle(node: FileNode) {
   if (node.displayName.length > maximumTitleLength)
     node.displayName = node.displayName.substring(0, maximumTitleLength) + "..."
 }
+
+let graphComponent = Component.Graph({
+  localGraph: {
+    drag: true,
+    zoom: true,
+    depth: 1,
+    scale: 0.3,
+    repelForce: 0.5,
+    centerForce: 1.5,
+    linkDistance: 50,
+    fontSize: 0.2,
+    opacityScale: 1,
+    removeTags: [],
+    showTags: true,
+  },
+  globalGraph: {
+    drag: true,
+    zoom: true,
+    depth: -1,
+    scale: 1.5,
+    repelForce: 0.1,
+    centerForce: 1.2,
+    linkDistance: 20,
+    fontSize: 0.6,
+    opacityScale: 1,
+    removeTags: [],
+    showTags: true,
+  },
+});
+
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
@@ -46,7 +76,7 @@ export const defaultContentPageLayout: PageLayout = {
     })),
   ],
   right: [
-    Component.Graph(),
+    graphComponent,
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],
@@ -75,5 +105,7 @@ export const defaultListPageLayout: PageLayout = {
       mapFn: mapExplorerTitle
     })),
   ],
-  right: [],
+  right: [
+    graphComponent
+  ],
 }

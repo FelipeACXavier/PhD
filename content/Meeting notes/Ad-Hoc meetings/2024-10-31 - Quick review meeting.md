@@ -4,7 +4,7 @@ date: 2024-10-31
 image: /static/background/red_mountain.jpg
 position: 50% 20%
 tags:
-  - Meeting-Notes
+  - Meeting-notes
   - Year 1
   - Ad-Hoc
 ---

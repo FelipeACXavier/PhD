@@ -1,10 +1,10 @@
 ---
 title: What does AI think about ESs?
 date: 2024-11-10
-image: /static/background/blue_mountain.jpg
-position: 50% 30%
+image: /static/background/boat.jpeg
+position: 50% 70%
 tags:
-  - Papers
+  - Standalone
   - Year 1
 ---
 

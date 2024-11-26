@@ -71,11 +71,17 @@ const config: QuartzConfig = {
         enableInHtmlEmbed: true,
         enableCheckbox: true
       }),
-      Plugin.GitHubFlavoredMarkdown(),
+      Plugin.GitHubFlavoredMarkdown({
+        linkHeadings: false
+      }),
       Plugin.TableOfContents({
         maxDepth: 2
       }),
-      Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
+      Plugin.CrawlLinks({
+        markdownLinkResolution: "relative",
+        externalLinkIcon: false,
+        lazyLoad: true
+      }),
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "mathjax" }),
     ],
@@ -84,8 +90,12 @@ const config: QuartzConfig = {
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
       Plugin.ContentPage(),
-      Plugin.FolderPage(),
-      Plugin.TagPage(),
+      Plugin.FolderPage({
+        showFolderCount: false
+      }),
+      Plugin.TagPage({
+        showTagCount: false
+      }),
       Plugin.ContentIndex({
         enableSiteMap: true,
         enableRSS: true,

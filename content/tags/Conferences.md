@@ -7,4 +7,4 @@ position: 50% 50%
 ---
 
 These are the notes related to conferences attended throughout the PhD.
-For a complete overview, refer to [[../tags/Conferences]]
+For a more focused view, refer to [[../Conferences/]]

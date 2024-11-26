@@ -38,7 +38,7 @@ This is the main page, it is not very interesting to be honest. However, from he
     <div class="card_img">  
       <img src="/static/background/red_mountain.jpg" alt="Meeting Notes">
       <div class="card_overlay">
-        <h2>[[./Meeting-notes/]]</h2>
+        <h2>[[./Meeting-notes/|Meeting notes]]</h2>
       </div>
     </div>
   </div>
@@ -52,9 +52,17 @@ This is the main page, it is not very interesting to be honest. However, from he
   </div>
   <div class="card">
     <div class="card_img">  
-      <img src="/static/background/bird.jpg" alt="To-Do">
+      <img src="/static/background/snow.jpeg" alt="To-Do">
       <div class="card_overlay">
         <h2>[[To-Do]]</h2>
+      </div>
+    </div>
+  </div>
+    <div class="card">
+    <div class="card_img">  
+      <img src="/static/background/boat.jpeg" alt="standalone">
+      <div class="card_overlay">
+        <h2>[[./Standalone-notes/|Standalone notes]]</h2>
       </div>
     </div>
   </div>
@@ -62,7 +70,7 @@ This is the main page, it is not very interesting to be honest. However, from he
     <div class="card_img">  
       <img src="/static/background/wave.jpg" alt="Year 1">
       <div class="card_overlay">
-        <h2>[[./Years/Year-1/]]</h2>
+        <h2>[[./Years/Year-1/|Year 1]]</h2>
       </div>
     </div>
   </div>

@@ -14,7 +14,7 @@ The software industry is facing a difficult dilemma. Programming languages are a
 
 ### What does AI think about this?
 
-[[content/Papers/Standalone notes/How do you think embedded software development differs from other types of software development]]
+[[../Standalone notes/What does AI think about ESs?]]
 
 Thus,
 

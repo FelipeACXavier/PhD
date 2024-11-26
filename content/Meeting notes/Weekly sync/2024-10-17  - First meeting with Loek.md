@@ -1,10 +1,10 @@
 ---
 title: 2024-10-17 - First meeting with Loek
 date: 2024-10-17
-image: /static/background/suspension_bridge.jpg
-position: 50% 40%
+image: /static/background/red_mountain.jpg
+position: 50% 20%
 tags:
-  - Meeting-Notes
+  - Meeting-notes
   - Year 1
   - Weekly-Sync
 ---

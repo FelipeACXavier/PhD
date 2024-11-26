@@ -10,10 +10,12 @@ import { i18n } from "../../i18n"
 interface TagContentOptions {
   sort?: SortFn
   numPages: number
+  showTagCount: boolean
 }
 
 const defaultOptions: TagContentOptions = {
   numPages: 10,
+  showTagCount: true,
 }
 
 export default ((opts?: Partial<TagContentOptions>) => {
@@ -80,7 +82,8 @@ export default ((opts?: Partial<TagContentOptions>) => {
                   </h2>
                   {content && <p>{content}</p>}
                   <div class="page-listing">
-                    <p>
+                    {options.showTagCount && (
+                      <p>
                       {i18n(cfg.locale).pages.tagContent.itemsUnderTag({ count: pages.length })}
                       {pages.length > options.numPages && (
                         <>
@@ -93,6 +96,7 @@ export default ((opts?: Partial<TagContentOptions>) => {
                         </>
                       )}
                     </p>
+                    )}
                     <PageList limit={options.numPages} {...listProps} sort={opts?.sort} />
                   </div>
                 </div>
@@ -112,7 +116,9 @@ export default ((opts?: Partial<TagContentOptions>) => {
         <div class={classes}>
           <article>{content}</article>
           <div class="page-listing">
-            <p>{i18n(cfg.locale).pages.tagContent.itemsUnderTag({ count: pages.length })}</p>
+            {options.showTagCount && (
+              <p>{i18n(cfg.locale).pages.tagContent.itemsUnderTag({ count: pages.length })}</p>
+            )}
             <div>
               <PageList {...listProps} />
             </div>

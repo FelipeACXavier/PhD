@@ -20,13 +20,14 @@ import DepGraph from "../../depgraph"
 
 interface TagPageOptions extends FullPageLayout {
   sort?: (f1: QuartzPluginData, f2: QuartzPluginData) => number
+  showTagCount: boolean
 }
 
 export const TagPage: QuartzEmitterPlugin<Partial<TagPageOptions>> = (userOpts) => {
   const opts: FullPageLayout = {
     ...sharedPageComponents,
     ...defaultListPageLayout,
-    pageBody: TagContent({ sort: userOpts?.sort }),
+    pageBody: TagContent({ sort: userOpts?.sort, showTagCount: userOpts?.showTagCount }),
     ...userOpts,
   }
 
