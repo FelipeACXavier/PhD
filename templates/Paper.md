@@ -1,7 +1,7 @@
 ---
 title: 
 date: {{date:YYYY-MM-DD}}
-image: ./static/background/blue_mountain.jpg
+image: /static/background/blue_mountain.jpg
 position: 50% 30%
 tags:
   - Papers

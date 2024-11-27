@@ -1,7 +1,7 @@
 ---
 title: 2024-10-31 - Quick review meeting
 date: 2024-10-31
-image: ./static/background/red_mountain.jpg
+image: /static/background/red_mountain.jpg
 position: 50% 20%
 tags:
   - Meeting-notes

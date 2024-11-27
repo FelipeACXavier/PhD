@@ -3,7 +3,7 @@ title: 4+1 architectural view model
 date: 2024-11-22
 description: My study into the 4+1 architectural view model
 draft: false
-image: ./static/background/boat.jpeg
+image: /static/background/boat.jpeg
 position: 50% 70%
 tags:
   - Standalone
@@ -11,7 +11,7 @@ tags:
 
 <div class="caption-img-container">
   <div class="caption-img">
-    <img src=/static/images/four_views.png/>
+    <img src=/static/images/four_views.png />
     <figcaption> <a href="https://linkinghub.elsevier.com/retrieve/pii/S0164121206001634">Hofmeister  et al. 2007</a></figcaption>
   </div>
 </div>

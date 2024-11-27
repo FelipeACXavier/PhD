@@ -11,7 +11,7 @@ function mapExplorerTitle(node: FileNode) {
 let explorer =  Component.Explorer({
   title: "Pages",
   folderDefaultState: "collapsed",
-  useSavedState: false,
+  useSavedState: true,
   mapFn: mapExplorerTitle
 })
 

@@ -1,7 +1,7 @@
 ---
 title: What does AI think about ESs?
 date: 2024-11-10
-image: ./static/background/boat.jpeg
+image: /static/background/boat.jpeg
 position: 50% 70%
 tags:
   - Standalone

@@ -3,7 +3,7 @@ title: Role of architectures in relation to designing DSL’s
 date: 2024-11-04
 description: Study on the role of architecture in relation to designing DSL’s
 draft: false
-image: ./static/background/wave.jpg
+image: /static/background/wave.jpg
 position: 50% 50%
 tags:
   - Year-1

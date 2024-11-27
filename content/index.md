@@ -3,7 +3,7 @@ title: Welcome to my PhD
 date: 2024-10-19
 description: A journal with all the notes, thoughts, rants, and papers written through my PhD journey.
 draft: false
-image: ./static/background/fishermen.jpg
+image: /static/background/fishermen.jpg
 position: 50% 60%
 ---
 

@@ -3,7 +3,7 @@ title: General paper reviews
 date: 2024-11-04
 description: Reviews of several generic papers
 draft: false
-image: ./static/background/wave.jpg
+image: /static/background/wave.jpg
 position: 50% 50%
 tags:
   - Year-1
@@ -35,7 +35,7 @@ The paper has the potential to highly simplify the development of DTs through th
 
   <div class="caption-img-container">
     <div class="caption-img">
-      <img src=/static/images/dt_architecture_monticore.png/>
+      <img src=/static/images/dt_architecture_monticore.png />
       <figcaption>Digital twin base architecture in MontiArc</figcaption>
     </div>
   </div>
@@ -44,7 +44,7 @@ The paper has the potential to highly simplify the development of DTs through th
 
   <div class="caption-img-container">
     <div class="caption-img">
-      <img src=/static/images/dt_cockpit.png/>
+      <img src=/static/images/dt_cockpit.png />
       <figcaption>Towards a Model-Driven Architecture for Interactive Digital Twin Cockpits <a href="http://link.springer.com/10.1007/978-3-030-62522-1_28" target="_blank">Dobbie et al. 2020</a></figcaption>
     </div>
   </div>
@@ -89,7 +89,7 @@ The authors present a method for extending MontiArch for specific architecture d
 
 <div class="caption-img-container">
   <div class="caption-img">
-    <img src=/static/images/architecture_design_activity.png/>
+    <img src=/static/images/architecture_design_activity.png />
     <span>Overview of the architecture design activity</span>
   </div>
 </div>

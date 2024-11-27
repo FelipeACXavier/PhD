@@ -3,7 +3,7 @@ title: Low-code development platform
 date: 2024-11-22
 description: Initial thoughts regarding the low-code development platform
 draft: false
-image: ./static/background/wave.jpg
+image: /static/background/wave.jpg
 position: 50% 50%
 tags: 
   - Year-1
@@ -21,7 +21,7 @@ Ideally, we would use a single tool to support all of these. Such a tool would n
 
 <div class="caption-img-container">
   <div class="caption-img">
-    <img src=/static/images/four_views.png/>
+    <img src=/static/images/four_views.png />
     <figcaption> <a href="https://linkinghub.elsevier.com/retrieve/pii/S0164121206001634">Hofmeister  et al. 2007</a></figcaption>
   </div>
 </div>
