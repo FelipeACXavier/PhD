@@ -3,7 +3,7 @@ title: Exploration of reference architectures and related languages
 date: 2024-10-22
 description: Exploration of reference architectures and related languages
 draft: false
-image: /static/background/wave.jpg
+image: ./static/background/wave.jpg
 position: 50% 50%
 tags:
   - Year-1

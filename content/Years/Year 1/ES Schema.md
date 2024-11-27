@@ -3,7 +3,7 @@ title: ES Schema
 date: 2024-10-23
 description: Initial thoughts regarding a generic ES schema
 draft: false
-image: /static/background/wave.jpg
+image: ./static/background/wave.jpg
 position: 50% 50%
 tags:
   - Year-1

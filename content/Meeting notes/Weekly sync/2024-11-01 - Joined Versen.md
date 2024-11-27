@@ -1,7 +1,7 @@
 ---
 title: 2024-11-01 - Joined Versen
 date: 2024-11-01
-image: /static/background/red_mountain.jpg
+image: ./static/background/red_mountain.jpg
 position: 50% 20%
 tags:
   - Meeting-notes

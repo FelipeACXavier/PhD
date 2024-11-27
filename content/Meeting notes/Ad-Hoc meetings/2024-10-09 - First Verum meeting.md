@@ -1,7 +1,7 @@
 ---
 title: 2024-10-09 - First Verum meeting
 date: 2024-10-09
-image: /static/background/red_mountain.jpg
+image: ./static/background/red_mountain.jpg
 position: 50% 20%
 tags:
   - Meeting-notes

@@ -2,7 +2,7 @@
 title: To-Do
 description: A simple to-do list to remind me of the weekly tasks 
 draft: false
-image: /static/background/snow.jpeg
+image: ./static/background/snow.jpeg
 position: 50% 60%
 ---
 

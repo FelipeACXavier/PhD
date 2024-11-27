@@ -3,7 +3,7 @@ title: Low-code development platform
 date: 2024-11-22
 description: Initial thoughts regarding the low-code development platform
 draft: false
-image: /static/background/wave.jpg
+image: ./static/background/wave.jpg
 position: 50% 50%
 tags: 
   - Year-1
@@ -81,5 +81,3 @@ This is the programmer perspective, so I would imagine that it is either unneces
 The process view deals with the dynamic aspects of the system, explains the system processes and how they communicate, and focuses on the run time behavior of the system. In this view, we represent the connections between the internal ROS nodes as well as the external connections, for example, with sensors, actuators, and other robots.
 
 ### Deployment view
-
-
