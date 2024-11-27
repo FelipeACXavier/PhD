@@ -9,6 +9,7 @@ tags:
   - Weekly-Sync
 ---
 
+Previous meeting:
 # Progress
 
 _What was done/accomplished this week?_

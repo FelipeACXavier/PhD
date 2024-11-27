@@ -27,7 +27,7 @@
 
 .img-grid {
   display: grid;
-  gap: 10px;
+  gap: 5px;
   padding: 10px;
 }
 
@@ -51,6 +51,9 @@
 
 // My own constructs
 .caption-img-container {
+  width: 90%;
+  margin: 0 auto !important;
+
   .caption-img {
     display: grid;
     grid-template:

@@ -6,5 +6,5 @@ draft: false
 image: /static/background/wave.jpg
 position: 50% 50%
 tags:
-  - Year 1
+  - Year-1
 ---

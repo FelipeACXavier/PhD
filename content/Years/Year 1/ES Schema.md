@@ -169,6 +169,7 @@ We can argue that these could be combined, since both the event-driven and micro
 ---
 
 Here we present a few of the studied architectures and determine how they would fit the schema.
+
 1. <span style="color:rgb(233, 84, 82)">Communication Manager (#DF5452)</span>
     
     is the module responsible for providing communication among robots or between a robot and the central machine. Its main functionality is to send/receive information, highlighting that this information is encrypted and comprises not only system data (e.g., location, maps, and warnings) but also modules and interfaces to evolve the system;
@@ -196,7 +197,7 @@ Here we present a few of the studied architectures and determine how they would 
 - _A unified software architecture for embedded systems_ ([Petitjean et al. 2004](https://ieeexplore.ieee.org/abstract/document/1571869))
 
 	<div class="caption-img-container">
-		<div class="caption-img w-90">
+		<div class="caption-img">
 			<img src=/static/images/petit_jean_2004.png/>
 		</div>
 	</div>
@@ -204,7 +205,7 @@ Here we present a few of the studied architectures and determine how they would 
 - _A Model-Based Approach for Common Representation and Description of Robotics Software Architectures (_[Monthe et al. 2022](https://www.mdpi.com/2076-3417/12/6/2982))
 
 	<div class="caption-img-container">
-		<div class="caption-img w-90">
+		<div class="caption-img">
 			<img src=/static/images/monthe_2022.png/>
 		</div>
 	</div>
@@ -213,7 +214,7 @@ Here we present a few of the studied architectures and determine how they would 
 - _A Reference Software Architecture to Support Unmanned Aircraft Integration in the National Airspace System (_[Heisey et al. 2013](https://doi.org/10.1007/s10846-012-9691-8)_)_
 
 	<div class="caption-img-container">
-		  <div class="caption-img w-90">
+		  <div class="caption-img">
 		    <img src=/static/images/helsey_2013.png/>
 		  </div>
 	</div>
@@ -221,7 +222,7 @@ Here we present a few of the studied architectures and determine how they would 
 - _A Generic Software Architecture for a Domain Specific Distributed Embedded System (_[Kumar  et al. 2007](https://d1wqtxts1xzle7.cloudfront.net/57738320/2.A_genneric_Architetcure-libre.pdf?1541926903=&response-content-disposition=inline%3B+filename%3DA_Generic_Software_Architecture_for_a_Do.pdf&Expires=1732661954&Signature=SWl6M1B3ehq~aGsixKFoaHZ79fJidL-8GfHJD67rxy6gwOnDoVdAvpj87sv31GGlBCUfLTx1gd~pf2epJo8sam42vPKT0qcuLfcAiWn4DcE7JioUd4pKZp3jJF1~FGsOEH8KQv8UmyV35k03-Cbi5vBe7BNTWwWv95GrfdvTzg6am3YuC-hQQ~ojtrhOVPN06UUUMPonQa8We13QXC9hrn~GUDwjFb6e5-a~egBEgQ1WjzsQwKSUJ07-S94eBgpw2ynLLN10WrA37UATg-PVo1c1hh37MJAtA8x3eEv0se3F-R6SwDZ2cn7z~66-5QTm8L1-GYPHhwPh7ojnG04ODg__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA)_)
 
 	<div class="caption-img-container">
-		  <div class="caption-img w-90">
+		  <div class="caption-img">
 		    <img src=/static/images/kumar_2007.png/>
 		  </div>
 	</div>

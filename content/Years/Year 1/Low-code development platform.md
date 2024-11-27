@@ -8,7 +8,6 @@ position: 50% 50%
 tags: 
   - Year-1
 ---
-
 # Overview
 
 We are looking for a tool that is able to support the development of autonomous mobile vehicles. I (and we, I hope) want to use this initial experiment as a proof-of-concept for a more generic platform that is capable of aiding in the development of embedded systems as a whole. In the development life-cycle there are four main tasks:
@@ -57,9 +56,30 @@ I think this is a very interesting area, but I would leave it for later and try 
 ### Internal controller
 
 Another big focus in the literature, this component is responsible for the internal coordination of the robot. 
+
+> [!note]
+> RoboSC [Wesselink  et al. 2023](https://ieeexplore.ieee.org/document/10161436/?arnumber=10161436&tag=1) can be used for this. Based on the paper, the language is relatively easy to use with a JSON-like syntax. I think it would be smart to maybe start with this and extend as we see fit. The annoying part is that it is currently tied to eclipse and I would prefer to have it independent of such technologies.
 ### Broker
 
-What I call broker is a component responsible for replaying messages from and to the hardware components.
+What I call broker is a component responsible for replaying messages from and to the hardware components. It is not always necessary but it can be useful to unify all external hardware communication.
 ### Sensors and actuators
 
 Finally, the lowest layer is the one responsible for interacting with the separate sensors and actuators.
+
+## 4 + 1 architecture model
+
+This model is better described in [[content/Standalone notes/4+1 architectural view model|4+1 architectural view model]], here I only explain how it is used in the developed LCDP.
+
+### Logical View
+
+I believe that this is the ideal abstraction for a user. It is concerned with the functionality provided to the end-users, whatever is underneath does not matter. Thus, here, we would deal only with the goals of the system, that is, its missions.
+### Implementation/Development view
+
+This is the programmer perspective, so I would imagine that it is either unnecessary or would be composed by the internal controller and internal mission definitions.
+### Process view
+
+The process view deals with the dynamic aspects of the system, explains the system processes and how they communicate, and focuses on the run time behavior of the system. In this view, we represent the connections between the internal ROS nodes as well as the external connections, for example, with sensors, actuators, and other robots.
+
+### Deployment view
+
+
