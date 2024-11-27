@@ -66,14 +66,14 @@ What I call broker is a component responsible for replaying messages from and to
 
 Finally, the lowest layer is the one responsible for interacting with the separate sensors and actuators.
 
-## 4 + 1 architecture model
+## 4 + 1 Architecture model
 
 This model is better described in [[content/Standalone notes/4+1 architectural view model|4+1 architectural view model]], here I only explain how it is used in the developed LCDP.
 
 ### Logical View
 
 I believe that this is the ideal abstraction for a user. It is concerned with the functionality provided to the end-users, whatever is underneath does not matter. Thus, here, we would deal only with the goals of the system, that is, its missions.
-### Implementation/Development view
+### Implementation/Development View
 
 This is the programmer perspective, so I would imagine that it is either unnecessary or would be composed by the internal controller and internal mission definitions.
 ### Process view

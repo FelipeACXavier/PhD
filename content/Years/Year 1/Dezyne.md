@@ -10,7 +10,7 @@ tags:
 ---
 
 
-# Installation 
+# Installation
 ---
 
   Finally, I friggin installed dezyne.  

@@ -20,6 +20,7 @@ _What was done/accomplished this week?_
 - Explored some nice papers about defining visual languages.
 	- [Moody  et al. 2009](https://ieeexplore.ieee.org/document/5353439/?arnumber=5353439)
 	- [Caire  et al. 2013](https://ieeexplore.ieee.org/abstract/document/6636711?casa_token=sDFPDsWXT4kAAAAA:b5aebd-sefXhBfFRDfJtuT5oGMvVRbKa-w8Ap7PZRL2S-oX2wsG11JGo4Q1RHWKDJQnuqpQ)
+- Looking into expanding RoboSC with a visual wrapper
 
 # Points of discussion
 
@@ -30,6 +31,7 @@ _What was discussed in the meeting?_
 # To do
 
 _What is the plan for next week?_
+### Part 1 - Quick meeting with Loek
 
 - Look further into visual representation of languages
 - Test roboSC ([Wesselink  et al. 2023](https://ieeexplore.ieee.org/document/10161436/?arnumber=10161436&tag=1)) and start with the abstract definition of a visual wrapper around it:
@@ -39,3 +41,7 @@ _What is the plan for next week?_
 - Talk to Ivan about RoboSC
 	- Was the meta-model ever used? If not, why not?
 	- Other ideas?
+---
+### Part 2 - Normal meeting
+
+- 
