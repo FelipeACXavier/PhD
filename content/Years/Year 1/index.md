@@ -2,7 +2,7 @@
 title: Year 1
 description: Notes related to the first year of my PhD
 draft: false
-image: /static/background/wave.jpg
+image: wave.jpg
 position: 50% 50%
 ---
 

@@ -4,7 +4,7 @@ date:
   "{ date:YYYY-MM-DD }": 
 description: 
 draft: false
-image: /static/background/village.jpeg
+image: village.jpeg
 position: 50% 60%
 tags:
   - Courses

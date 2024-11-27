@@ -1,7 +1,7 @@
 ---
 title: 2024-10-29 -Symposium
 date: 2024-10-29
-image: /static/background/red_mountain.jpg
+image: red_mountain.jpg
 position: 50% 20%
 tags:
   - Meeting-notes

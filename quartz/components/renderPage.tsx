@@ -217,8 +217,10 @@ export function renderPage(
     </div>
   )
 
-  const imageFile = componentData.fileData.frontmatter?.image;
-  const headerImage = imageFile ? (cfg.baseUrl ? `https://${cfg.baseUrl}${imageFile}` : imageFile ) : "";
+  let headerImage = null;
+  if (componentData.fileData.frontmatter?.image)
+    headerImage = cfg.baseUrl ? `https://${cfg.baseUrl}/static/background/${componentData.fileData.frontmatter?.image}` : componentData.fileData.frontmatter?.image;
+
   const headerImagePos = "object-position: " + (componentData.fileData.frontmatter?.position ?? "50% 50%") + ";";
   const lang = componentData.fileData.frontmatter?.lang ?? cfg.locale?.split("-")[0] ?? "en"
   const doc = (

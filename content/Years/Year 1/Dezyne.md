@@ -3,7 +3,7 @@ title: Dezyne
 date: 2024-10-11
 description: Initial considerations regarding the installation, and usage of Dezyne.
 draft: false
-image: /static/background/wave.jpg
+image: wave.jpg
 position: 50% 50%
 tags:
   - Year-1

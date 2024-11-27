@@ -1,7 +1,7 @@
 ---
 title: Paper idea - 1
 date: 2024-11-07
-image: /static/background/blue_mountain.jpg
+image: blue_mountain.jpg
 position: 50% 30%
 tags:
   - Papers
