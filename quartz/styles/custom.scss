@@ -95,16 +95,21 @@
 
 // Fix darkmode button to top right
 .darkmode {
-  @media all and not ($mobile) {
+  @media ($desktop) {
     position: fixed !important;
     top: 10px !important;
     left: calc(100% - 40px) !important;
   }
 }
 
-// Don't show the ugly blue for links
-a, a:hover, a:visited, a:active {
-  color: inherit !important;
+.recent-notes>h3 {
+  @media ($tablet) {
+    margin: 0;
+  }
+}
+
+a {
+  color: inherit;
   text-decoration: none;
 }
 
