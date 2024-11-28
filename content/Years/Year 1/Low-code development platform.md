@@ -26,7 +26,7 @@ Ideally, we would use a single tool to support all of these. Such a tool would n
   </div>
 </div>
 
-## Generic embedded systems architecture
+# Generic embedded systems architecture
  
  We reuse some of the insights gained when exploring a possible embedded systems schema, see [[content/Years/Year 1/ES Schema|ES Schema]] and [[content/Papers/Paper idea - 1|Paper idea - 1]]. Basically, at the top most view, we have a layered architecture that defines the different concerns of the system. Each layer can then have its more specific architecture, a brief example is shown below.
 
@@ -34,8 +34,8 @@ Ideally, we would use a single tool to support all of these. Such a tool would n
 
 Since ROS handles the entire brokerage and internal communication, we only need to focus on developing, connecting, and running the individual nodes. Thus, we need a DSL to
 
-- describe the connections between the internal nodes. <span style="color:rgb(0, 176, 240)">(can be generalised)</span>
-- describe the communication with the low-level sensors and actuators. <span style="color:rgb(0, 176, 240)">(can be generalised)</span>
+- describe the connections between the internal nodes. <span style="color:rgb(0, 176, 240)">(should be generalizable)</span>
+- describe the communication with the low-level sensors and actuators. <span style="color:rgb(0, 176, 240)">(should be generalizable)</span>
 - describe and handle missions.
 - describe, synchronise, and handle multi-robotic systems.
 
@@ -47,7 +47,6 @@ In this section, we go over my expectations towards the layers mentioned in the 
 ### Multirobot controller
 
 [Bourr  et al. 2023](https://pubblicazioni.unicam.it/handle/11581/484448) shows how x-klaim can be used for this, I still need to look further into it but currently, this is the task with the least priority.
-
 ### Mission controller
 
 This component deals with coordinating missions, splitting sub-tasks and similar activities.
@@ -65,19 +64,18 @@ What I call broker is a component responsible for replaying messages from and to
 ### Sensors and actuators
 
 Finally, the lowest layer is the one responsible for interacting with the separate sensors and actuators.
-
 ## 4 + 1 Architecture model
 
 This model is better described in [[content/Standalone notes/4+1 architectural view model|4+1 architectural view model]], here I only explain how it is used in the developed LCDP.
-
 ### Logical View
 
-I believe that this is the ideal abstraction for a user. It is concerned with the functionality provided to the end-users, whatever is underneath does not matter. Thus, here, we would deal only with the goals of the system, that is, its missions.
+I believe that this is the ideal abstraction for a user. It is concerned with the functionality provided to the end-users, whatever is underneath does not matter. Thus, here, we would deal only with the goals of the system, that is, its missions. At this level, we would like to have something akin to BPMS.
 ### Implementation/Development View
 
 This is the programmer perspective, so I would imagine that it is either unnecessary or would be composed by the internal controller and internal mission definitions.
 ### Process view
 
 The process view deals with the dynamic aspects of the system, explains the system processes and how they communicate, and focuses on the run time behavior of the system. In this view, we represent the connections between the internal ROS nodes as well as the external connections, for example, with sensors, actuators, and other robots.
-
 ### Deployment view
+
+In this view, we define the structure of the system in terms of required platforms, OS, dependencies, etc. Furthermore, since we are dealing with ESs, it makes sense to setup IOs configurations and such things in this view. 

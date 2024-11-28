@@ -28,5 +28,10 @@ tags:
 - They are now working on code mobility -> share of missions.
 - x-klaim does not directly support formal verification, but it can be extended with it
 	- It was marked as a future work in the doctoral thesis but it was never continued
+	- Have a look into moonlight ([Bartocci  et al. 2021](http://arxiv.org/abs/2104.14333))
+- Nothing explicit about architecture. 
+- x-klaim creates a shared space, which is essentially a cloud, which is then used to share the states of the individual robots. Through the generated ROS bridges, each robot can synchronize with one another and execute a mission.
+	- The mission themselves are defined with the x-claim notation due to "ease of use".
+- Complaints about setting up the models and starting up simulations. <- <span style="color:rgb(94, 135, 201)">(Could we support this?)</span>
 - What aspect do we want to tackle? Once that is clearer, Dr Bourr is open for cooperation. 
  

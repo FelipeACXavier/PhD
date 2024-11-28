@@ -31,14 +31,15 @@ _What was discussed in the meeting?_
 # To do
 
 _What is the plan for next week?_
-### Part 1 - Quick meeting with Loek
 
-- Look further into visual representation of languages
+Look further into visual representation of languages
 - Test roboSC ([Wesselink  et al. 2023](https://ieeexplore.ieee.org/document/10161436/?arnumber=10161436&tag=1)) and start with the abstract definition of a visual wrapper around it:
 	- What do we want to represent? 
 	- What are the essential concepts? 
 	- What lacks in the underlying language?
-- Talk to Ivan about RoboSC
+### Part 1 - Quick meeting with Loek
+
+- Talk to Ivan about RoboSC (2024-11-28)
 	- Was the meta-model ever used? If not, why not?
 	- Other ideas?
 ---
