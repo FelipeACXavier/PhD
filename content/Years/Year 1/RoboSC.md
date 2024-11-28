@@ -11,5 +11,6 @@ tags:
 
 # What RoboSC can do
 
+This is an initial test.
 
 # What it cannot
