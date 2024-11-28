@@ -5,7 +5,7 @@ image: red_mountain.jpg
 position: 50% 40%
 tags:
   - Meeting-notes
-  - Year 1
+  - Year-1
   - Weekly-Sync
 ---
 
