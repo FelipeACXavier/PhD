@@ -9,13 +9,13 @@ tags:
   - Weekly-Sync
 ---
 
-Previous meeting: [[content/Meeting notes/Weekly sync/2024-11-14 - Paper idea 1|2024-11-14 - Paper idea 1]]
+Previous meeting: [[content/Meeting notes/Weekly sync/Paper idea 1|Paper idea 1]]
 # Progress
 
 _What was done/accomplished this week?_
 
 - Benevol was very interesting, a good introduction to the world of conferences
-- Contacted [Bourr  et al. 2023](https://pubblicazioni.unicam.it/handle/11581/484448) -> [[content/Meeting notes/Ad-Hoc meetings/2024-11-25 - Discussion with Khalid Bourr|2024-11-25 - Discussion with Khalid Bourr]]
+- Contacted [Bourr  et al. 2023](https://pubblicazioni.unicam.it/handle/11581/484448) -> [[content/Meeting notes/Ad-Hoc meetings/Discussion with Khalid Bourr|Discussion with Khalid Bourr]]
 - Set a date to talk to Elena Torta, 2024-12-11. A bit far sadly.
 - Explored some nice papers about defining visual languages.
 	- [Moody  et al. 2009](https://ieeexplore.ieee.org/document/5353439/?arnumber=5353439)
@@ -45,4 +45,7 @@ Look further into visual representation of languages
 ---
 ### Part 2 - Normal meeting
 
-- 
+- Maurice ter Beek - Pisa 
+- Mussafi
+- miso - spain
+- juan de lara -> dandelion

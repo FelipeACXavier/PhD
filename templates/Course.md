@@ -1,7 +1,6 @@
 ---
-title: 
-date:
-  "{ date:YYYY-MM-DD }": 
+title: {{title}}
+date: {{date:YYYY-MM-DD}}
 description: 
 draft: false
 image: village.jpeg

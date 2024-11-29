@@ -1,5 +1,5 @@
 ---
-title: 
+title: {{title}}
 date: {{date:YYYY-MM-DD}}
 image: blue_mountain.jpg
 position: 50% 30%
@@ -8,16 +8,16 @@ tags:
   - Year-1
 ---
 
-## Introduction
+# Introduction
 
-## Related work
+# Related work
 
-## Methodology
+# Methodology
 
-## Results
+# Results
 
-## Discussion
+# Discussion
 
-## Threats to validity
+# Threats to validity
 
-## Conclusion
+# Conclusion

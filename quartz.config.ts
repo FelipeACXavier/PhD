@@ -82,7 +82,7 @@ const config: QuartzConfig = {
       }),
       Plugin.CrawlLinks({
         markdownLinkResolution: "absolute",
-        externalLinkIcon: false,
+        externalLinkIcon: true,
         lazyLoad: true
       }),
       Plugin.Description(),

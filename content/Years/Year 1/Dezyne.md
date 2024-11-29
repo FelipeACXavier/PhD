@@ -79,7 +79,7 @@ tags:
 # Using Dezyne
 ---
 
-### Use `simulate` to run the model
+## Use `simulate` to run the model
 
 ```Plain
 Usage: dzn simulate [OPTION]... [FILE]...
@@ -113,7 +113,7 @@ Simulate a Dezyne model
 
 ```
 
-### Use `graph` to generate graphs:
+## Use `graph` to generate graphs:
 
 ```Plain
 Usage: dzn graph [OPTION]... [FILE]...
@@ -138,7 +138,7 @@ Generate graph from a Dezyne model
 
 ```
 
-### Use `verify` to check models
+## Use `verify` to check models
 
 ```Plain
 Usage: dzn verify [OPTION]... DZN-FILE
@@ -160,7 +160,7 @@ Check DZN-FILE for verification errors in Dezyne models
 
 ```
 
-### Use `code` to generate code from the dezyne models
+## Use `code` to generate code from the dezyne models
 
 ```Plain
 Usage: dzn code [OPTION]... DZN-FILE
