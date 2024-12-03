@@ -6,13 +6,13 @@ draft: false
 image: boat.jpeg
 position: 50% 70%
 tags:
-  - Standalone
+  - Software-architecture
 ---
 
 <div class="caption-img-container">
   <div class="caption-img">
     <img src=/static/images/four_views.png />
-    <figcaption> <a href="https://linkinghub.elsevier.com/retrieve/pii/S0164121206001634">Hofmeister  et al. 2007</a></figcaption>
+    <figcaption> <a href="https://linkinghub.elsevier.com/retrieve/pii/S0164121206001634">Hofmeister et al. 2007</a></figcaption>
   </div>
 </div>
 

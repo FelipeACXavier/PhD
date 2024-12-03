@@ -6,7 +6,6 @@ draft: false
 image: wave.jpg
 position: 50% 50%
 tags:
-  - Year-1
 ---
 
 

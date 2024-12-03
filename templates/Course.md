@@ -7,5 +7,4 @@ image: village.jpeg
 position: 50% 60%
 tags:
   - Courses
-  - Year-1
 ---

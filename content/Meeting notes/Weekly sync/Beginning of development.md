@@ -5,11 +5,11 @@ image: red_mountain.jpg
 position: 50% 40%
 tags:
   - Meeting-notes
-  - Year-1
   - Weekly-Sync
 ---
 
 Previous meeting: [[content/Meeting notes/Weekly sync/Paper idea 1|Paper idea 1]]
+
 # Progress
 
 _What was done/accomplished this week?_
@@ -33,17 +33,18 @@ _What was discussed in the meeting?_
 _What is the plan for next week?_
 
 Look further into visual representation of languages
+
 - Test roboSC ([Wesselink  et al. 2023](https://ieeexplore.ieee.org/document/10161436/?arnumber=10161436&tag=1)) and start with the abstract definition of a visual wrapper around it:
 	- What do we want to represent? 
 	- What are the essential concepts? 
 	- What lacks in the underlying language?
-### Part 1 - Quick meeting with Loek
+## Part 1 - Quick meeting with Loek
 
 - Talk to Ivan about RoboSC (2024-11-28)
 	- Was the meta-model ever used? If not, why not?
 	- Other ideas?
 ---
-### Part 2 - Normal meeting
+## Part 2 - Normal meeting
 
 - Maurice ter Beek - Pisa 
 - Mussafi

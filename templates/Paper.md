@@ -5,7 +5,6 @@ image: blue_mountain.jpg
 position: 50% 30%
 tags:
   - Papers
-  - Year-1
 ---
 
 # Introduction

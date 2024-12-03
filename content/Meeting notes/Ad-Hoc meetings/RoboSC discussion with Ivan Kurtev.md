@@ -6,7 +6,6 @@ position: 50% 20%
 tags:
   - Meeting-notes
   - Ad-Hoc
-  - Year-1
 ---
 
 # Discussion notes

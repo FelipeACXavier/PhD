@@ -5,8 +5,7 @@ description: Initial thoughts regarding a generic ES schema
 draft: false
 image: wave.jpg
 position: 50% 50%
-tags:
-  - Year-1
+tags: []
 ---
 
 # Design process
@@ -96,7 +95,7 @@ This architecture aims to:
 > Should system users be considered stakeholders in a reference architecture?  
   
 > [!important]  
-> So far, all these steps follow very closely SiMuS (Feitosa et al. 2013, Nakagawa et al. 2014). Thus, should we consider simply expanding it and proving its usability for other embedded systems instead of developing a new reference architecture?I do think that we can expand a bit on the @import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')device managerdevice\ managerdevice manager﻿ and the @import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')controllercontrollercontroller﻿ by introducing a layered and a micro-kernel pattern. This should make the architecture more robust which, in turn, should better support modifications. This, of course, is based on the architectures proposed by, for example, Guessi et al. 2015, Heisey et al. 2013, Liu et al. 2020, and Petitjean et al. 2004.Furthermore, as discussed before, it might be interesting to include a layer on top of the controller, or split the controller into micro and macro tasks.  
+> So far, all these steps follow very closely SiMuS (Feitosa et al. 2013, Nakagawa et al. 2014). Thus, should we consider simply expanding it and proving its usability for other embedded systems instead of developing a new reference architecture?I do think that we can expand a bit on the device manager and the controller by introducing a layered and a micro-kernel pattern. This should make the architecture more robust which, in turn, should better support modifications. This, of course, is based on the architectures proposed by, for example, Guessi et al. 2015, Heisey et al. 2013, Liu et al. 2020, and Petitjean et al. 2004. Furthermore, as discussed before, it might be interesting to include a layer on top of the controller, or split the controller into micro and macro tasks.  
 
 # Building on the existing architecture
 
@@ -105,25 +104,25 @@ This architecture aims to:
 The aforementioned architecture itself looks as such (The information and communication managers are not shown due to their highly specific requirements depending on the application):
 
 <div class="img-grid img-grid-a-5">
-	<div class="caption-img-container"  style="grid-area: a">
+	<div class="caption-img-container" style="grid-area: a">
 		<div class="caption-img">
 			<img src=/static/images/conceptual_view_of_simus.png />
 			<figcaption>Conceptual View of SiMuS</figcaption>
 		</div>
 	</div>
-	<div class="caption-img-container"  style="grid-area: b">
+	<div class="caption-img-container" style="grid-area: b">
 		<div class="caption-img">
 			<img src=/static/images/global_view_of_simus.png />
 			<figcaption>Global view of SiMuS</figcaption>
 		</div>
 	</div>
-	<div class="caption-img-container"  style="grid-area: c">
+	<div class="caption-img-container" style="grid-area: c">
 		<div class="caption-img">
 			<img src=/static/images/devices_manager_SiMuS.png />
 			<figcaption>Structural View (Devices Manager) of SiMuS</figcaption>
 		</div>
 	</div>
-	<div class="caption-img-container"  style="grid-area: d">
+	<div class="caption-img-container" style="grid-area: d">
 		<div class="caption-img">
 			<img src=/static/images/evolution_manager_SiMuS.png />
 			<figcaption>Structural View (Evolution Manager) of SiMuS</figcaption>
@@ -141,7 +140,7 @@ The aforementioned architecture itself looks as such (The information and commun
 	<div class="justify-text" style="grid-area: a">
 		As mentioned above, we can combine this reference architecture with the layered device architecture presented by <a href="https://linkinghub.elsevier.com/retrieve/pii/S0164121214000211">Eklund et al. 2014</a> to have a more complete and modular architecture. Although, this might only be necessary in the source code viewpoint.
 	</div>
-	<div class="caption-img-container"  style="grid-area: b">
+	<div class="caption-img-container" style="grid-area: b">
 		<div class="caption-img">
 			<img src=/static/images/source_code_viewpoint.png />
 			<figcaption>Source code viewpoint</figcaption>
@@ -172,29 +171,39 @@ Here we present a few of the studied architectures and determine how they would 
 
 1. <span style="color:rgb(233, 84, 82)">Communication Manager (#DF5452)</span>
     
+
     is the module responsible for providing communication among robots or between a robot and the central machine. Its main functionality is to send/receive information, highlighting that this information is encrypted and comprises not only system data (e.g., location, maps, and warnings) but also modules and interfaces to evolve the system;
+
     
 2. <span style="color:rgb(199, 125, 72)">Information Manager (#C77D48)</span>
     
+
     is the module responsible for persisting all data of the system (e.g., maps, protocols, interfaces, and modules);
+
     
 3. <span style="color:rgb(82, 158, 114)">Devices Manager (#529E72)</span>
     
+
     is responsible for managing sensors (Sensors Manager), actuators (Actuators Manager), and resources (Resources Manager) of a robot. As observed in Figure 5, it provides the access interfaces to these elements, as well as testing data of these devices. The mentioned sub-modules provide basic functionalities to Controller and are capable of responding whether a specific interface is available or not. The Self-test module is capable of request all necessary data to perform the test and provide them to the Controller;
+
     
 4. <span style="color:rgb(157, 104, 211)">Evolution Manager (#9D68D3)</span>
     
+
     is responsible for managing the runtime evolution of the system, i.e., the acquisition, delivery, and validation of modules and interfaces. For example, it permits the robot conclude the same task in different ways, since it is possible to find different modules that perform the same task and the required interfaces to use them. As shown in Figure 6, Modules Manager and Interfaces Manager are responsible for coordinating these tasks, as well as provide high-level functionalities to the Controller that searches and installs them, or informs their unavailability;
+
     
 5. <span style="color:rgb(94, 135, 201)">Controller (#5E87C9)</span>
     
+
     is responsible for controlling the robot, i.e., it is capable of taking measures to achieve the goal of the system. Thereunto, it plans and executes the necessary tasks, orchestrating the other modules (Communication Manager, Information Manager, Devices Manager, and Evolution Manager). This is the most complex module, since it depends on the others and has an inner complexity. Despite the dependence, the amount of exchanged messages is minimized due to the encapsulation of the functionalities.
+
     
 ## Examples
 
 ---
 
-### _A unified software architecture for embedded systems_ ([Petitjean et al. 2004](https://ieeexplore.ieee.org/abstract/document/1571869))
+### _A Unified software architecture for embedded systems_ ([Petitjean et al. 2004](https://ieeexplore.ieee.org/abstract/document/1571869))
 
 <div class="caption-img-container">
   <div class="caption-img">

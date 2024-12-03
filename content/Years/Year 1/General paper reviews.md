@@ -6,7 +6,6 @@ draft: false
 image: wave.jpg
 position: 50% 50%
 tags:
-  - Year-1
 ---
 
 ## Generating customized low-code development platforms for digital twins (Dalibor et al. 2022)

@@ -6,7 +6,7 @@ draft: false
 image: boat.jpeg
 position: 50% 70%
 tags:
-  - Standalone
+  - Quartz
 ---
 
 # Introduction
@@ -19,7 +19,7 @@ Naturally, I had to import all my notes from Notion. To do that, Notion has a ni
 
 # Setting up my Quartz layout
 
-Quartz look quite nice by default already, there were only a few minor changes that I needed to make to make it really mine. Since I got a bit used to Notion, I wanted to have the beautiful banners on top of the pages. This was possible by modifying the `renderPage` file. I added an option that it looks for the `image` and `position` tag from the note front matter and uses those, if present, as the page banner. I have to admit, I think it looks very nice, especially since it took 5 minutes of fidgeting to it working.  First, we check whether the fields were set:
+Quartz look quite nice by default already, there were only a few minor changes that I needed to make to make it really mine. Since I got a bit used to Notion, I wanted to have the beautiful banners on top of the pages. This was possible by modifying the `renderPage` file. I added an option that it looks for the `image` and `position` tag from the note front matter and uses those, if present, as the page banner. I have to admit, I think it looks very nice, especially since it took 5 minutes of fidgeting to it working. First, we check whether the fields were set:
 
 ```tsx
   const headerImage = componentData.fileData.frontmatter?.image ?? "";

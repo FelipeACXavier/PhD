@@ -4,7 +4,7 @@ date: 2024-11-10
 image: boat.jpeg
 position: 50% 70%
 tags:
-  - Standalone
+  - Embedded-systems
 ---
 
 Embedded software development differs from other types of software development in several key ways:

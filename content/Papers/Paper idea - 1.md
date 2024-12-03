@@ -5,24 +5,23 @@ image: blue_mountain.jpg
 position: 50% 30%
 tags:
   - Papers
-  - Year-1
 ---
 
 # What do I want to achieve with this paper?
 
 The software industry is facing a difficult dilemma. Programming languages are advancing towards higher-level abstractions, enabling complex programs to be written more productively. ([Sujeeth et al. 2014](https://dl.acm.org/doi/10.1145/2584665)) However, we still see a lack of tool related to this aspect in the domain of embedded systems [citation]. While tools such as MetaEdit+ and MontiCore provide a certain level of support to build software for embedded systems, a language designer is necessary to tailor each workbench for the specific application. A generic (maybe focused on a specific platform) solution, inspired by Mendix and Outsystems, could greatly improve and facilitate the development of such systems.
 
-### What does AI think about this?
+## What does AI think about this?
 
 [[../Standalone notes/What does AI think about ESs?]]
 
-Thus,
+Thus, 
 
 > [!important]  
 > - How to deploy generated code in different processor architectures?
 > - How to simplify the setup of IOs or other necessary tools, for example, buildroot and u-boot when using an embedded OS?
 > - How to handle:
-> 	- Parallelism in low-code systems (concurrency)Limited hardware, low memory, weak CPU, etc…
+> 	- Parallelism in low-code systems (concurrency) → Limited hardware, low memory, weak CPU, etc…
 > 	- Faults and security in such systems (error handling)
 > 	- Management of and interaction with device drivers (low-level programming)
 > 	- Real-time requirements (Very often present) → Safety critical applications  
@@ -64,7 +63,9 @@ While such a generic solution for the entire embedded systems domain is promisin
 
 Collaboration diagram of the smart agriculture scenario
 
-- [Brouzos et al. 2023](https://doi.org/10.1007/s10846-023-01861-y) (Konstantinos Panayiotou)→ Also seem very similar ([https://github.com/robotics-4-all/generos/tree/master](https://github.com/robotics-4-all/generos/tree/master)). But they only use low code (NodeRED) for control, not development. I am indeed no longer sure that this is a valid research anymore. They have similar plans as us “The next step for this work is to build a visual DSL on top of GeneROS textual DSL so as to allow for the graphical construction of GRS models.”
+- [Brouzos et al. 2023](https://doi.org/10.1007/s10846-023-01861-y) (Konstantinos Panayiotou)→ Also seem very similar ([https://github.com/robotics-4-all/generos/tree/master](https://github.com/robotics-4-all/generos/tree/master)). But they only use low code (NodeRED) for control, not development. I am indeed no longer sure that this is a valid research anymore. They have similar plans as us “The next step for this work is to build a visual DSL on top of GeneROS textual DSL so as to allow for the graphical construction of GRS models.”  
+
+  After checking the code, I noticed that the generated code only handles the interfaces; any behavior must be manually defined in the same file which completely breaks the evolution of the system. This should be an easy fix, but since they didn't do it, it is a flaw we can exploit.
 
 ## Methodology
 
