@@ -7,13 +7,26 @@ tags:
   - Papers
 ---
 
+# Research gaps in the literature
+
+- Based on [Nordmann et al. 2014](https://link.springer.com/chapter/10.1007/978-3-319-11900-7_17) there are very few DSLs and papers that focus on the architecture of robotic applications. These are concerned with the physical structure of the robots, coordination and control (which is also what I noticed in my unstructured study)
+- [Casalaro et al. 2022](https://doi.org/10.1007/s10270-021-00908-8) indicates the need for:
+	- Methods for managing the uncertainty of units of measure at runtime
+	- Monitoring functional requirements at runtime 
+	- The composition of languages and code generators
+	- Methods for systematically testing autonomous robots
+
+> [!quote] 
+> It is quite surprising that only 3 approaches (P13, P16, P76) provide full coverage of these aspects in their proposed solutions. As surprising is the fact that more than 10% of the analysed papers only focus on modelling structural information of MRSs. Overall, behavioural details are the ones that are modelled the most, both for automatic generation of production code and for model-based analysis
+
+- Overall lack of empirical evidence, most use simulations or no evaluation.
 # What do I want to achieve with this paper?
 
 The software industry is facing a difficult dilemma. Programming languages are advancing towards higher-level abstractions, enabling complex programs to be written more productively. ([Sujeeth et al. 2014](https://dl.acm.org/doi/10.1145/2584665)) However, we still see a lack of tool related to this aspect in the domain of embedded systems [citation]. While tools such as MetaEdit+ and MontiCore provide a certain level of support to build software for embedded systems, a language designer is necessary to tailor each workbench for the specific application. A generic (maybe focused on a specific platform) solution, inspired by Mendix and Outsystems, could greatly improve and facilitate the development of such systems.
 
 ## What does AI think about this?
 
-[[../Standalone notes/What does AI think about ESs?]]
+[[content/Standalone notes/What does AI think about ESs?|What does AI think about ESs?]]
 
 Thus, 
 
@@ -25,8 +38,6 @@ Thus,
 > 	- Faults and security in such systems (error handling)
 > 	- Management of and interaction with device drivers (low-level programming)
 > 	- Real-time requirements (Very often present) → Safety critical applications  
-
-  
 
 Based on these differences, I think it makes sense to split our goals into sub-goals. I think that our main goal, as succinct as possible, is to create a _low-code platform that supports the development and verification of embedded software_. To achieve this, we need to research how to handle the issues mentioned above. To start, as discussed, I think it makes sense to focus on a smaller sub-domain, for example, autonomous driving robots. Using this smaller example, we could investigate all the issues and slowly build the tools needed to create the full platform. What is nice is that all the papers that I have been exploring come together in order to achieve this final goal.
 
@@ -47,7 +58,7 @@ Importance of a generic architecture…
 
 Verification of embedded systems…
 
-While such a generic solution for the entire embedded systems domain is promising, it is a scope too large for a single paper; therefore, we break this process down and focus here on a single domain: mobile robots under the ROS framework. Our ultimate goal, is to build on the work developed in this paper and expand the learned techniques to create a generic low-code development platform focused on embedded systems.
+While such a generic solution for the entire embedded systems domain is promising, the scope too large for a single paper. Therefore, we break this process down and focus here on a single domain: mobile robots under the ROS framework. Our ultimate goal, is to build on the work developed in this paper and expand the learned techniques to create a generic low-code development platform focused on embedded systems.
 
 ## Related work
 
@@ -85,4 +96,4 @@ The meta-model…
 
 ## Conclusion
 
-“One of the limitation of the language is that only the ROS middleware is supported. As described in Chapter 1, this study delivers a Platform-specific meta-model for ROS and can be further used by future PIMs to enable abstraction of the development and execution middleware. ROS was mainly selected for this study because it is a well established open source robotics framework, which is used by a wide range of end users, such as roboticists, developers, researchers and companies, and has an extensive community driven repository of ready-to-use algorithms and hardware drivers for building robotic systems.”
+“One of the limitation of the language is that only the ROS middleware is supported. As described in Chapter 1, this study delivers a Platform-specific meta-model for ROS and can be further used by future PIMs to enable abstraction of the development and execution middleware. ROS was mainly selected for this study because it is a well-established open source robotics framework, which is used by a wide range of end users, such as roboticists, developers, researchers and companies. Furthermore, it has an extensive community driven repository of ready-to-use algorithms and hardware drivers for building robotic systems.”

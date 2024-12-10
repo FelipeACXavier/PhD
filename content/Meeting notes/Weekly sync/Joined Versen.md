@@ -22,7 +22,7 @@ Administrative:
 
 Research:
 
-- While reading related documents, I found an interesting reference architecture for robotic systems that could serve as a base for a an embedded systems architecture: [[ES Schema]]
+- While reading related documents, I found an interesting reference architecture for robotic systems that could serve as a base for a an embedded systems architecture: [[content/Standalone notes/ES Schema]]
     - Looked into how other architectures fit this reference architecture
 - Started looking into the role of architecture in relation to DSLs (only today).
 

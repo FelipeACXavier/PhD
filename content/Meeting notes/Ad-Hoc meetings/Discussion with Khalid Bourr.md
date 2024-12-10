@@ -10,7 +10,7 @@ tags:
 
 # Goals / agenda
 
-- Discuss with Dr Bourr, author of [Bourr  et al. 2023](https://pubblicazioni.unicam.it/handle/11581/484448),  future possibilities regarding our project.
+- Discuss with Dr Bourr, author of [Bourr  et al. 2023](https://pubblicazioni.unicam.it/handle/11581/484448), future possibilities regarding our project.
 	- Has the project continued? If not, why not?
 	- BPMN is only used for defining missions, did you ever look into also using it to define the integration of ROS nodes?
 

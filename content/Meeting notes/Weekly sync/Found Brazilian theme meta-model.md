@@ -16,7 +16,7 @@ _What was done/accomplished this week?_
 
 - Looked into several papers about reference architectures and _related_ languages for embedded systems
     
-    - Interesting papers are marked in [[Exploration of reference architectures and related languages]]
+    - Interesting papers are marked in [[content/Standalone notes/Exploration of reference architectures and related languages]]
     - A team possibly working on a similar research: [Antonio et al. 2012](https://www.zotero.org/felipeacxavier/items/S4KQX35K/attachment/YR6QXNNE/reader). However, I could not find anything else regarding this topic from the authors. Would be interesting to contact them?
 
 > [!quote]

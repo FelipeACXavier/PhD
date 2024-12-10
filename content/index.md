@@ -50,17 +50,9 @@ This is the main page, it is not very interesting to be honest. However, from he
       </div>
     </div>
   </div>
-  <div class="card">
-    <div class="card_img">  
-      <img src="/static/background/snow.jpeg" alt="To-Do">
-      <div class="card_overlay">
-        <h2>[[To-Do]]</h2>
-      </div>
-    </div>
-  </div>
     <div class="card">
     <div class="card_img">  
-      <img src="/static/background/boat.jpeg" alt="standalone">
+      <img src="/static/background/boat.jpeg" alt="Standalone">
       <div class="card_overlay">
         <h2>[[./Standalone-notes/|Standalone notes]]</h2>
       </div>
@@ -68,9 +60,9 @@ This is the main page, it is not very interesting to be honest. However, from he
   </div>
   <div class="card">
     <div class="card_img">  
-      <img src="/static/background/wave.jpg" alt="Year 1">
+      <img src="/static/background/wave.jpg" alt="Reviews">
       <div class="card_overlay">
-        <h2>[[./Years/Year-1/|Year 1]]</h2>
+        <h2>[[./Reviews]]</h2>
       </div>
     </div>
   </div>
