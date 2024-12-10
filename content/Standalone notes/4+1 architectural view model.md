@@ -6,7 +6,7 @@ draft: false
 image: boat.jpeg
 position: 50% 70%
 tags:
-  - Software-architecture
+  - Architecture
 ---
 
 <div class="caption-img-container">

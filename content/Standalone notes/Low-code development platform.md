@@ -5,7 +5,9 @@ description: Initial thoughts regarding the low-code development platform
 draft: false
 image: wave.jpg
 position: 50% 50%
-tags: []
+tags:
+  - Low-code
+  - DSL
 ---
 
 # Overview
@@ -19,7 +21,7 @@ We are looking for a tool that is able to support the development of autonomous 
 
 Ideally, we would use a single tool to support all of these. Such a tool would not limit the user to a single role, but allow an overview of the system through the use of the four viewpoints. If we take this into account, we would then have four view points of the entire development process which could then be specialised per task. For example, once it is time to deploy the application, the different concerns related to deployment are combined into that single view.
 
-[[content/Years/Year 1/ES Schema]]
+[[content/Standalone notes/ES Schema]]
 
 <div class="caption-img-container">
   <div class="caption-img">
@@ -33,7 +35,7 @@ Ideally, we would use a single tool to support all of these. Such a tool would n
 # Generic embedded systems architecture
  
 
- We reuse some of the insights gained when exploring a possible embedded systems schema, see [[content/Years/Year 1/ES Schema|ES Schema]] and [[content/Papers/Paper idea - 1|Paper idea - 1]]. Basically, at the top most view, we have a layered architecture that defines the different concerns of the system. Each layer can then have its more specific architecture, a brief example is shown below.
+ We reuse some of the insights gained when exploring a possible embedded systems schema, see [[content/Standalone notes/ES Schema|ES Schema]] and [[content/Papers/Paper idea - 1|Paper idea - 1]]. Basically, at the top most view, we have a layered architecture that defines the different concerns of the system. Each layer can then have its more specific architecture, a brief example is shown below.
 
 ![[content/Diagrams/LCDP_arch.pdf#height=fit-content]]
 

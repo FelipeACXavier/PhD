@@ -5,7 +5,9 @@ description: Study on the role of architecture in relation to designing DSL’s
 draft: false
 image: wave.jpg
 position: 50% 50%
-tags: []
+tags:
+  - DSL
+  - Architecture
 ---
 
 # A preliminary study on various implementation approaches of domain-specific language (Kosar et al. 2008)

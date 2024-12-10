@@ -7,6 +7,7 @@ image: boat.jpeg
 position: 50% 70%
 tags:
   - Quartz
+  - Tools
 ---
 
 # Introduction
