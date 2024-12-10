@@ -2,8 +2,8 @@
 title: Reviews
 description: Reviews performed during my PhD
 draft: false
-image: wave.jpg
-position: 50% 50%
+image: snow.jpeg
+position: 50% 80%
 ---
 
 Reviews performed during my PhD

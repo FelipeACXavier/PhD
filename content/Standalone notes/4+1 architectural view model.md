@@ -3,8 +3,8 @@ title: 4+1 architectural view model
 date: 2024-11-22
 description: My study into the 4+1 architectural view model
 draft: false
-image: boat.jpeg
-position: 50% 70%
+image: wave.jpg
+position: 50% 50%
 tags:
   - Architecture
 ---

@@ -2,8 +2,8 @@
 title: Standalone notes
 description: Generic standalone notes that do not fit the other categories
 draft: false
-image: boat.jpeg
-position: 50% 70%
+image: wave.jpg
+position: 50% 50%
 ---
 
 Generic standalone notes that do not fit the other categories.

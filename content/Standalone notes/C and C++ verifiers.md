@@ -2,8 +2,8 @@
 title: C and C++ verifiers
 date: 2024-12-04
 draft: false
-image: boat.jpeg
-position: 50% 70%
+image: wave.jpg
+position: 50% 50%
 tags:
   - Verification
   - C

@@ -52,7 +52,7 @@ This is the main page, it is not very interesting to be honest. However, from he
   </div>
     <div class="card">
     <div class="card_img">  
-      <img src="/static/background/boat.jpeg" alt="Standalone">
+      <img src="/static/background/wave.jpg" alt="Standalone">
       <div class="card_overlay">
         <h2>[[./Standalone-notes/|Standalone notes]]</h2>
       </div>
@@ -60,7 +60,7 @@ This is the main page, it is not very interesting to be honest. However, from he
   </div>
   <div class="card">
     <div class="card_img">  
-      <img src="/static/background/wave.jpg" alt="Reviews">
+      <img src="/static/background/snow.jpeg" alt="Reviews">
       <div class="card_overlay">
         <h2>[[./Reviews]]</h2>
       </div>

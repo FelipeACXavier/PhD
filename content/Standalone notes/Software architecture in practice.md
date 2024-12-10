@@ -2,8 +2,8 @@
 title: Software architecture in practice
 date: 2024-12-03
 draft: false
-image: boat.jpeg
-position: 50% 70%
+image: wave.jpg
+position: 50% 50%
 tags:
   - Software-architecture
   - Review

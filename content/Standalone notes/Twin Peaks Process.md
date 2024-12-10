@@ -3,8 +3,8 @@ title: Twin peaks process
 date: 2024-11-01
 description: The Twin Peaks Model is used in software development to iteratively develop the architecture and the requirements. Both “peaks” are equally important.
 draft: false
-image: boat.jpeg
-position: 50% 70%
+image: wave.jpg
+position: 50% 50%
 tags:
   - Software-architecture
 ---

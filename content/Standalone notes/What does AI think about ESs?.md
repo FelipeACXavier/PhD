@@ -1,8 +1,8 @@
 ---
 title: What does AI think about ESs?
 date: 2024-11-10
-image: boat.jpeg
-position: 50% 70%
+image: wave.jpg
+position: 50% 50%
 tags:
   - Embedded-systems
 ---

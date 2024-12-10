@@ -3,8 +3,8 @@ title: General paper reviews
 date: 2024-11-04
 description: Reviews of several generic papers
 draft: false
-image: wave.jpg
-position: 50% 50%
+image: snow.jpeg
+position: 50% 80%
 tags:
   - Review
 ---

@@ -3,8 +3,8 @@ title: Using Quartz
 date: 2024-11-26
 description: A short description on how I use Quartz to create my journal.
 draft: false
-image: boat.jpeg
-position: 50% 70%
+image: wave.jpg
+position: 50% 50%
 tags:
   - Quartz
   - Tools
