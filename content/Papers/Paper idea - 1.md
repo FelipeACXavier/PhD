@@ -9,17 +9,26 @@ tags:
 
 # Research gaps in the literature
 
-- Based on [Nordmann et al. 2014](https://link.springer.com/chapter/10.1007/978-3-319-11900-7_17) there are very few DSLs and papers that focus on the architecture of robotic applications. These are concerned with the physical structure of the robots, coordination and control (which is also what I noticed in my unstructured study)
-- [Casalaro et al. 2022](https://doi.org/10.1007/s10270-021-00908-8) indicates the need for:
-	- Methods for managing the uncertainty of units of measure at runtime
-	- Monitoring functional requirements at runtime 
-	- The composition of languages and code generators
-	- Methods for systematically testing autonomous robots
+- Based on A Survey on Domain-Specific Languages in Robotics ([Nordmann et al. 2014](https://link.springer.com/chapter/10.1007/978-3-319-11900-7_17)) there are very few DSLs and papers that focus on the architecture of robotic applications. These are concerned with the physical structure of the robots, coordination and control (which is also what I noticed in my unstructured study)
+- Model-driven engineering for mobile robotic systems: a systematic mapping study ([Casalaro et al. 2022](https://doi.org/10.1007/s10270-021-00908-8)) indicates the need for:
+	- Methods for managing the uncertainty of units of measure at runtime.
+	- Monitoring functional requirements at runtime.
+	- The composition of languages and code generators.
+	- Methods for systematically testing autonomous robots.
+	- Overall lack of empirical evidence, most use simulations or no evaluation.
+	- Focus on text based languages.
+	- Lack of formal validation
+	- Lack of tools to support runtime analysis of these robots.
+
+> [!quote]	
+> Therefore, it would be desirable to have a shared hardware-software platform for aerial robots, instead of having different research groups building their own ones.
 
 > [!quote] 
 > It is quite surprising that only 3 approaches (P13, P16, P76) provide full coverage of these aspects in their proposed solutions. As surprising is the fact that more than 10% of the analysed papers only focus on modelling structural information of MRSs. Overall, behavioural details are the ones that are modelled the most, both for automatic generation of production code and for model-based analysis
 
-- Overall lack of empirical evidence, most use simulations or no evaluation.
+- Systematic Literature Review on Domain-specific Languages for ROS-based Systems ([Bourr  et al. 2023](https://pubblicazioni.unicam.it/handle/11581/484448)) indicates:
+	- Lack of research in areas such as human-robot interaction and perception and sensing. Lots of research on robotic architecture, programming and security
+	- Focus on textual DSLs, very feel visual ones.
 # What do I want to achieve with this paper?
 
 The software industry is facing a difficult dilemma. Programming languages are advancing towards higher-level abstractions, enabling complex programs to be written more productively. ([Sujeeth et al. 2014](https://dl.acm.org/doi/10.1145/2584665)) However, we still see a lack of tool related to this aspect in the domain of embedded systems [citation]. While tools such as MetaEdit+ and MontiCore provide a certain level of support to build software for embedded systems, a language designer is necessary to tailor each workbench for the specific application. A generic (maybe focused on a specific platform) solution, inspired by Mendix and Outsystems, could greatly improve and facilitate the development of such systems.
@@ -46,7 +55,7 @@ However, there are a few questions that come to mind:
 - Should we create the underlying DSL that allows us to generate embedded code and then build the low-code part on top? I think this makes sense, the low-code part is just an abstraction, a different visualization, of the DSL.
 - Is there enough content to create separate papers for each subject or should we look into merging these?
     - Are they truly novel if the low-code aspect is not directly considered? → Based on some further search, it doesn’t seem likely
-    - We need to start looking into this, but I believe that multiple DSLs might be necessary, in that case, we could split them per “requirement” and then create a very-abstract DSL (low-code) that is able to utilize these requirement DSLs.
+    - We need to start looking into this, but I believe that multiple DSLs might be necessary. In that case, we could split them per “requirement” and then create a very-abstract DSL (low-code) that is able to utilize these requirement DSLs.
 
 # Layout
 

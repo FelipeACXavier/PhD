@@ -82,7 +82,7 @@ No plans yet.
 
 ## Year 1
 
-For the first year, I will explore the current state of my research field with the aforementioned questions in mind. Furthermore, I will be focusing on developing the skills and obtaining the knowledge required to bring the overall goal into fruition. I hope to develop myself through courses, conferences, and lots of explorations. Moreover, I plan to define the initial requirements of the languages/LCDP and publish a paper about these findings. Finally, I would like better define the overall plan for my PhD.
+For the first year, I will explore the current state of my research field with the aforementioned questions in mind. Furthermore, I will be focusing on developing the skills and obtaining the knowledge required to bring the overall goal into fruition. I hope to develop myself through courses, conferences, and lots of explorations. Moreover, I plan to define the initial requirements of the languages/LCDP and publish a paper about these findings. We are currently evaluating the possibility of studying the topic with focus on a smaller domain (mobile robots) so that we can later expand the concepts to the whole domain of embedded systems. Finally, I would like better define the overall plan for my PhD.
 
 ## Year 2
 
