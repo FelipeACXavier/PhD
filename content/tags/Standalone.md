@@ -2,7 +2,7 @@
 title: Standalone nodes
 description: Generic standalone notes that do not fit the other categories
 draft: false
-image: boat.jpeg
+image: boat.webp
 position: 50% 70%
 ---
 

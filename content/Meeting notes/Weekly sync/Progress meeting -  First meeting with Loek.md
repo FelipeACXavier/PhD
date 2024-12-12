@@ -1,7 +1,7 @@
 ---
 title: 2024-10-17 - First meeting with Loek
 date: 2024-10-17
-image: red_mountain.jpg
+image: red_mountain.webp
 position: 50% 20%
 tags:
   - Meeting-notes

@@ -5,7 +5,7 @@ description: TSP required after 3 months from the start of the PhD.
 draft: false
 tags:
   - Administrative
-image: red_bridge.jpg
+image: red_bridge.webp
 position: 50% 50%
 ---
 

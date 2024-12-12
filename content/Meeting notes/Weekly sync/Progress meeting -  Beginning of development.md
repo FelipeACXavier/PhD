@@ -1,7 +1,7 @@
 ---
 title: 2024-11-27 - Beginning of development
 date: 2024-11-27
-image: red_mountain.jpg
+image: red_mountain.webp
 position: 50% 40%
 tags:
   - Meeting-notes

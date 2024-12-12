@@ -2,7 +2,7 @@
 title: Review - STAF 2025 - 3
 date: 2024-12-12
 draft: false
-image: snow.jpeg
+image: snow.webp
 position: 50% 80%
 tags:
   - Review
@@ -19,4 +19,3 @@ tags:
 
 
 # Comments
-

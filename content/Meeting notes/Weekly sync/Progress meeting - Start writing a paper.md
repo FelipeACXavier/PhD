@@ -1,7 +1,7 @@
 ---
 title: 2024-11-07 - Start writing a paper
 date: 2024-11-07
-image: red_mountain.jpg
+image: red_mountain.webp
 position: 50% 20%
 tags:
   - Meeting-notes

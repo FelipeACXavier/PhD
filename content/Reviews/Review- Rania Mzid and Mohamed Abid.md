@@ -3,7 +3,7 @@ title: Review - Rania Mzid and Mohamed Abid
 date: 2024-11-03
 description: Review of the paper by Rania Mzid and Mohamed Abid
 draft: false
-image: snow.jpeg
+image: snow.webp
 position: 50% 80%
 tags:
   - Review

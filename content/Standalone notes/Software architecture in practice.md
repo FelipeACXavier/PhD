@@ -2,7 +2,7 @@
 title: Software architecture in practice
 date: 2024-12-03
 draft: false
-image: wave.jpg
+image: wave.webp
 position: 50% 50%
 tags:
   - Software-architecture

@@ -3,7 +3,7 @@ title: RoboSC
 date: 2024-11-27
 description: Description of roboSC
 draft: false
-image: snow.jpeg
+image: snow.webp
 position: 50% 80%
 tags:
   - DSL

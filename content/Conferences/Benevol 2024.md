@@ -5,7 +5,7 @@ description: The 23rd Belgium-Netherlands Software Evolution Workshop (Wed 20 +)
 draft: false
 tags:
   - Conferences
-image: bridge.jpeg
+image: bridge.webp
 position: 50% 50%
 ---
 

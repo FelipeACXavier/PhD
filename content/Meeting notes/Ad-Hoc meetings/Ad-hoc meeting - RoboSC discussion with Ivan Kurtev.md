@@ -1,7 +1,7 @@
 ---
 title: 2024-11-28 - RoboSC discussion with Ivan Kurtev
 date: 2024-11-28
-image: red_mountain.jpg
+image: red_mountain.webp
 position: 50% 20%
 tags:
   - Meeting-notes

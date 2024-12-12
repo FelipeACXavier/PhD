@@ -2,7 +2,7 @@
 title: Reviews
 description: Reviews performed during my PhD
 draft: false
-image: snow.jpeg
+image: snow.webp
 position: 50% 80%
 ---
 

@@ -5,7 +5,7 @@ description: Cynergy4MIE is a visionary project poised to revolutionize Europe's
 draft: false
 tags:
   - Administrative
-image: red_bridge.jpg
+image: red_bridge.webp
 position: 50% 50%
 ---
 

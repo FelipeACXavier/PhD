@@ -2,7 +2,7 @@
 title: Weekly sync
 description: These are the notes related to progress meetings meetings held through the PhD
 draft: false
-image: red_mountain.jpg
+image: red_mountain.webp
 position: 50% 20%
 ---
 

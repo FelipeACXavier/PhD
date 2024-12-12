@@ -1,7 +1,7 @@
 ---
 title: 2024-10-31 - Quick review meeting
 date: 2024-10-31
-image: red_mountain.jpg
+image: red_mountain.webp
 position: 50% 20%
 tags:
   - Meeting-notes

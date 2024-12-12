@@ -1,7 +1,7 @@
 ---
 title: 2024-12-11 - Discussion with Elena Torta
 date: 2024-12-11
-image: red_mountain.jpg
+image: red_mountain.webp
 position: 50% 20%
 tags:
   - Meeting-notes

@@ -2,7 +2,7 @@
 title: 2024-12-12 - Paper idea 1.1
 date: 2024-12-12
 draft: false
-image: red_mountain.jpg
+image: red_mountain.webp
 position: 50% 40%
 tags:
   - Meeting-notes

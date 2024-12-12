@@ -3,7 +3,7 @@ title: Sirius - graphical modelling
 date: 2024-11-27
 description: "Exploration of the Sirius tool: https://eclipse.dev/sirius/"
 draft: false
-image: wave.jpg
+image: wave.webp
 position: 50% 50%
 tags:
   - Tools

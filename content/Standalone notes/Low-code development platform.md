@@ -3,7 +3,7 @@ title: Low-code development platform
 date: 2024-11-22
 description: Initial thoughts regarding the low-code development platform
 draft: false
-image: wave.jpg
+image: wave.webp
 position: 50% 50%
 tags:
   - Low-code

@@ -2,7 +2,7 @@
 title: Review
 description: Reviews performed during my PhD
 draft: false
-image: wave.jpg
+image: wave.webp
 position: 50% 50%
 ---
 

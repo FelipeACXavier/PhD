@@ -1,7 +1,7 @@
 ---
 title: Administrative
 description: These are the notes related to administrative matters of the PhD
-image: red_bridge.jpg
+image: red_bridge.webp
 position: 50% 50%
 ---
 

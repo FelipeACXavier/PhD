@@ -2,7 +2,7 @@
 title: C and C++ verifiers
 date: 2024-12-04
 draft: false
-image: wave.jpg
+image: wave.webp
 position: 50% 50%
 tags:
   - Verification

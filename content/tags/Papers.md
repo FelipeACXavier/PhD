@@ -2,7 +2,7 @@
 title: Papers
 description: Notes related to paper ideas
 draft: false
-image: blue_mountain.jpg
+image: blue_mountain.webp
 position: 50% 30%
 ---
 

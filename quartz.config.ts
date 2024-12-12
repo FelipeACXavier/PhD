@@ -17,12 +17,12 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     // Comment this for tests
-    baseUrl: "felipeacxavier.github.io/PhD",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    // baseUrl: "felipeacxavier.github.io/PhD",
+    ignorePatterns: ["private", "templates", ".obsidian", ".github"],
     defaultDateType: "created",
-    generateSocialImages: false,
+    generateSocialImages: true,
     theme: {
-      fontOrigin: "googleFonts",
+      fontOrigin: "local",
       cdnCaching: true,
       typography: {
         header: "Schibsted Grotesk",
@@ -78,7 +78,7 @@ const config: QuartzConfig = {
       }),
       Plugin.TableOfContents({
         maxDepth: 2,
-        collapseByDefault: true
+        collapseByDefault: false
       }),
       Plugin.CrawlLinks({
         markdownLinkResolution: "absolute",

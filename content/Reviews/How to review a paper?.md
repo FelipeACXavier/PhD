@@ -2,7 +2,7 @@
 title: How to review a paper?
 date: 2024-12-02
 draft: false
-image: boat.jpeg
+image: boat.webp
 position: 50% 70%
 tags:
   - Tips-and-tricks

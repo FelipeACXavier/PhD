@@ -3,7 +3,7 @@ title: ES Schema
 date: 2024-10-23
 description: Initial thoughts regarding a generic ES schema
 draft: false
-image: wave.jpg
+image: wave.webp
 position: 50% 50%
 tags: []
 ---

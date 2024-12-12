@@ -1,7 +1,7 @@
 ---
 title: 2024-10-24 -Found  a nice meta-model
 date: 2024-10-24
-image: red_mountain.jpg
+image: red_mountain.webp
 position: 50% 20%
 tags:
   - Meeting-notes
