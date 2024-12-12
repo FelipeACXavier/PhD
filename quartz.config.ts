@@ -11,7 +11,7 @@ const config: QuartzConfig = {
     pageTitle: "🎓 Felipe's journal",
     pageTitleSuffix: "",
     enableSPA: true,
-    enablePopovers: false,
+    enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
@@ -74,7 +74,7 @@ const config: QuartzConfig = {
         comments: true,
       }),
       Plugin.GitHubFlavoredMarkdown({
-        linkHeadings: false
+        linkHeadings: true
       }),
       Plugin.TableOfContents({
         maxDepth: 2,

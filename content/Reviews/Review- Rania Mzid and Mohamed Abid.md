@@ -14,9 +14,7 @@ tags:
 
 # Software Architecture Design for Real-Time Control Systems; How Design patterns Could Help?
 
-1. The pattern concept is widely used in various contexts, but its use to guide  
-    software architecture design verification has not been thoroughly investigated,  
-    which motivated our contributions in this paper.  
+1. The pattern concept is widely used in various contexts, but its use to guide software architecture design verification has not been thoroughly investigated, which motivated our contributions in this paper.  
     
     - The authors argue that patterns have been used in contexts different than a “guide for software architecture” which is doubtful. I have found some papers with a similar approach.
     - The authors do specify further:
