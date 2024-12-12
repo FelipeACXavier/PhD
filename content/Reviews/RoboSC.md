@@ -46,6 +46,6 @@ RoboSC allows us to define these but only in respect to the controller itself. A
 
 - Limited options for data storage and data passing.
 - Very limited component behavior definition. It is limited to the state machine and very simple communication steps.
-- Limited to ROS concepts. (extend to [MIRO](http://users.isr.ist.utl.pt/~jseq/ResearchAtelier/misc/Miro%20-%20Middleware%20for%20Robots) or [The Player Project](https://playerproject.github.io))
+- Limited to ROS concepts. (extend to [MIRO](http://users.isr.ist.utl.pt/~jseq/ResearchAtelier/misc/Miro%20-%20Middleware%20for%20Robots), [The Player Project](https://playerproject.github.io), [Orocos](https://www.orocos.org/index.html))
 - No formal proof of the correctness:
 	- DSL -- Not proven -> CIF -- proven -> controller

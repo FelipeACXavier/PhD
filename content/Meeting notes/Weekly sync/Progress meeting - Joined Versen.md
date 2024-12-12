@@ -16,7 +16,7 @@ Administrative:
 
 - Contacted:
     - Futu.re, waiting for a reply
-    - TechUnited codebase: [https://gitlab.tue.nl/tech-united-eindhoven/Turtle3](https://gitlab.tue.nl/tech-united-eindhoven/Turtle3) → Mostly C and matlab
+    - RoboCup TechUnited codebase: [https://gitlab.tue.nl/tech-united-eindhoven/Turtle3](https://gitlab.tue.nl/tech-united-eindhoven/Turtle3) → Mostly C and matlab
 - Accepted Mauricio’s invitation to join Versen
 - Joined IPA, but not the meeting in early November
 

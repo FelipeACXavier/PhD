@@ -1,5 +1,5 @@
 ---
-title: 2024-10-24 - Progress meeting
+title: 2024-10-24 -Found  a nice meta-model
 date: 2024-10-24
 image: red_mountain.jpg
 position: 50% 20%

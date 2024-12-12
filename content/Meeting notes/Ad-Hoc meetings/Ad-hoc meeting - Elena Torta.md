@@ -17,3 +17,10 @@ tags:
 - What would you like to see in such an approach to say it is actually useful?
 
 # Discussion notes
+
+- Control based on optimisation frameworks
+- Casadi 
+- dr. herman bruyninckx (https://u0011821.pages.gitlab.kuleuven.be)
+- Rene robocup
+- Maybe focus on a specific mission
+- Worth looking into classviz for robots
