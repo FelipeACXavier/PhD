@@ -30,7 +30,7 @@ _What was discussed in the meeting?_
 
 - How does the TSP look like? (How complete does it need to be? Is it fine to change the plan later?)
 - Idea: Elena mentioned that lots of roboticists don't really think of an architecture, they simply start organically building the necessary software components.
-	- Propose or use an existing architecture for mobile robots (see [[content/Standalone notes/ES Schema|ES Schema]]), then use and extend Stario's tools to explore the underlying architecture of several robots, and compare the expectation with reality. With this combination, we should have enough information to 
+	- Propose or use an existing architecture for mobile robots (see [[content/Standalone notes/ES Schema|ES Schema]]), then use and extend Satrio's tools to explore the underlying architecture of several robots, and compare the expectation with reality. With this combination, we should have enough information to 
 # To do
 
 _What is the plan for next week?_
@@ -41,7 +41,6 @@ _What is the plan for next week?_
 - Become familiar with:
 	- Software architecture recovery
 	- Functional Decomposition
-- If this work proposal is accepted, then start writing an actual research proposal.
 - Review paper for [[content/Reviews/Review - STAF 2025 - 3|STAF 2025]]
 - Look into MAPK
 - gijs walhavens towards digital twins for soccer robots a use case in reusing artifacts

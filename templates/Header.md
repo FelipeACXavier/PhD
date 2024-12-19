@@ -1,8 +1,10 @@
 ---
-title: {{title}}
-date: {{date:YYYY-MM-DD}}
+title:
+  "{ title }": 
+date:
+  "{ date:YYYY-MM-DD }": 
 draft: false
-image: boat.jpeg
-position: 50% 70%
-tags: []
+image: wave.webp
+position: 50% 50%
+tags:
 ---

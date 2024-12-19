@@ -16,7 +16,7 @@ position: 50% 50%
 **A generic low-code platform solution for safe and reliable embedded software.**
 ## Arrangements on guidance
 
-Weekly-sync in-person meetings with both supervisors plus extra meetings whenever necessary.
+Weekly in-person meetings with both supervisors plus extra meetings whenever necessary.
 
 # Project description and objectives
 ---
@@ -33,14 +33,14 @@ Within the context of the Cynergy4MIE, TU/e is tasked with proposing methods of 
  - **Question:** How to engineer a low-code development platform so that users with little background on embedded software can design, implement, maintain, and deploy a safe and reliable system?
 	 - **Hypothesis:** The development platform should follow a 4+1 views style that allows users to focus on each view of the system that best suit their role in the project. Furthermore, a generic/standardized architecture is utilized to simplify reusability and constraint possible design choices, which in turn facilitates validation and verification. Finally, a structured visual notation, that reuses known concepts through all the system views, allows users from different domains to understand all the specific views of the system.
 
-- **Sub-question 1:** What are the main characteristics of low-code development platforms, how are they implemented, and how these characteristics can be reused for embedded software development?
-	- **Hypothesis:** Low-code platforms tend to follow a very strict programming logic that severely constraints the user possibilities. This is the opposite of embedded software which tends to be more free. Nonetheless, despite this apparent freedom, most developers tend to stick with few well-known patterns; therefore, the same, more strict environment, can be used for embedded development.
-
-- **Sub-question 2:** How does a reference embedded software architecture look like?
+- **Sub-question 1:** How does a reference embedded software architecture look like?
 	- **Hypothesis:** At the top-level, a layered architecture seems to be the most used. Then, each layer has its own less generalized architecture.
 
-- **Sub-question 3:** What kinds of patterns can be used to generalize and abstract embedded software into a low-code development platform?
-	- **Hypothesis:** Communication through standardized protocols, event queues, mutual exclusion, etc,...
+- **Sub-question 2:** What are the main characteristics of low-code development platforms, how are they implemented, and how these characteristics can be reused for embedded software development?
+	- **Hypothesis:** Low-code platforms tend to follow a very strict programming logic that severely constraints the user possibilities. This is the opposite of embedded software which tends to be more free. Nonetheless, despite this apparent freedom, most developers tend to stick with few well-known patterns; therefore, the same, more strict environment, can be used for embedded development.
+
+- **Sub-question 3:** What patterns can be used to generalize and abstract embedded software into a low-code development platform?
+	- **Hypothesis:** Low-level hardware communication, well-known synchronization patterns, etc...
 
 - **Sub-question 4:** What are the requirements for designing friendly visual languages (low-code) for embedded systems?
 	- **Hypothesis:** There are guidelines for visual languages; however, we are wondering about how these concepts can be made more specific for embedded systems. I believe that concepts which are usually more relevant for embedded software compared to other disciplines (limited memory, real-time requirements,...) need to be made explicit.
@@ -53,7 +53,7 @@ Within the context of the Cynergy4MIE, TU/e is tasked with proposing methods of 
 
 <span style="color: rgb(128, 132, 138); font-style: italic;">List the intended methods to be used and relate them to the data and conclusions in the context of the research objectives. For instance, by indicating the intended methods per sub-question as formulated in the previous paragraph. This can be high level, e.g., ‘lab measurement X, equipment Y, to identify Z’, or ‘simulation A, tool B, to identify C’, or ‘survey K, type of participants I, to identify M’.</span>
 
-The initial data collection would be done initially through the literature and interviews (?). Based on the collected data, the creation of the LCDP can start. Then, at every stage or milestone, an evaluation of the state of the platform is done with professionals as well as people which are new to the field. By year 3 or 4, it would be interesting to evaluate the tool with students and a real project. Furthermore, our own tests would be done with "real" hardware to prove the tool capabilities. 
+The initial data collection would be done initially through the literature, open and closed software repositories. Based on the collected data, the creation of the LCDP can start. Then, at every stage/milestone, an evaluation of the state of the platform is done with professionals as well as people which are new to the field. By year 3 or 4, it would be interesting to evaluate the tool with students and a real project. On the meantime, the language capabilities would be tested by creating software for "real" hardware, e.g., robots in the university of for one of our partners.
 
 <span style="color:rgb(94, 135, 201)">(I think that interviews would better grasp the needs for the tool and then evaluate its improvements. Informal interviews, by sending demos or in conferences, would also be helpful)</span>
 
@@ -61,7 +61,7 @@ The initial data collection would be done initially through the literature and i
 
 <span style="color: rgb(128, 132, 138); font-style: italic;">Explain the academic relevance and contribution to science. If the project is targeted specifically at some societal or applied problem, explain the potential impact.</span>
 
-Low-code development platforms have been mostly a focus of business applications and embedded systems have been left behind. However, embedded systems keep proving themselves as a current and necessary technology; thus, a solution that simplifies the development of such technologies and make it more approachable to newcomers is more necessary than ever.
+Low-code development platforms have been mostly a focus of business applications while embedded systems have been left behind. However, embedded systems keep proving themselves as a current and necessary technology; thus, a solution that simplifies the development of such technologies and make it more approachable to newcomers is more necessary than ever.
 
 ## Research Data Management
 
@@ -116,7 +116,8 @@ Since it is required, I need to go to at least three IPA events, and would like 
 
 <span style="color: rgb(128, 132, 138); font-style: italic;">Describe which competences you plan to develop in the coming period. Have a look at the TU/e PhD Competence Profile and the PhD Competence Development Guide to prepare. You can find the links to the Guide and Profile in the Support tab. Also indicate what kind of support you have discussed and agreed upon with your supervisor. Below you can indicate which learning opportunities you intend to follow</span>
 
-This question is a bit strange, naturally, by the end of my first year I would like to have developed all the necessary competences at least up to level 1. I plan to focus particularly in communication and academic thinking. In this case, and based on the PhD Competence Development Guide, I think it would be interesting to follow: 
+This question is a bit strange, naturally, by the end of my first year I would like to have developed all the necessary competences at least up to level 1. I plan to focus particularly in communication and academic thinking, as those are my weakest areas, I believe. In this case, and based on the PhD Competence Development Guide, I think it would be interesting to follow: 
 
 - Analytic Storytelling
 - Poster & Pitch: Presenting Your Research
+

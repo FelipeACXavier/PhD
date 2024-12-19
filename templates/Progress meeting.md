@@ -9,15 +9,14 @@ tags:
 ---
 
 Previous meeting:
+
 # Progress
 
 _What was done/accomplished this week?_
 
-
 # Points of discussion
 
 _What was discussed in the meeting?_
-
 
 # To do
 
