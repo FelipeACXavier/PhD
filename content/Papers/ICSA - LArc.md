@@ -10,7 +10,6 @@ tags:
 # Introduction
 
 \section{Introduction}
-
 \label{sec:introduction}
 
 In recent years, the “Low-Code” software development approach has gained significant traction. Low-Code promotes the development of software in a simplified manner, commonly involving a graphical user interface to specify the application and generators to create such application while requiring minimal coding skills from the user~\cite{waszkowski_2019}. While the term “Low-Code” was coined by Forrester Research in 2014~\cite{richardson_2014}, it first appeared in the scientific literature in 2017, and gained broader attention in the research community following Zolotas et al. in 2018~\cite{zolotas_2018}.
@@ -33,9 +32,9 @@ To address this overall question, five sub-questions have been formulated:
 
 \begin{itemize}[leftmargin=1cm,itemsep=1mm]
 
-    \item[\textbf{RQ1}] What does a reference embedded software architecture look like?
+    \item[\textbf{RQ1}] What are the main characteristics of low-code development platforms, including their implementation, and how are these characteristics applicable to embedded software development?
 
-    \item[\textbf{RQ2}] What are the main characteristics of low-code development platforms, including their implementation, and how are these characteristics applicable to embedded software development?
+    \item[\textbf{RQ2}] What does a reference embedded software architecture look like?
 
     \item[\textbf{RQ3}] What patterns can be used to generalize and abstract embedded software into a low-code development platform?
 
@@ -58,6 +57,54 @@ Related to architecture, we encounter the works by
 Finally, related to reference architecture of embedded systems... Once again, we find a focus on robotic systems instead of a general approach for embedded systems.
 
 # Core
+A low-code platform for embedded systems
+
+Since our end goal is to have a low-code development platform that enhances the creation of embedded software systems, our research follows a plan which we believe will provide the best basis for this endeavour. In this section we explain our hypotheses and plan steps to tackle each of the research questions defined in the introduction.
+
+## Low-code development characteristics
+
+Before defining our own platform, we must understand what is already out there and what technologies used in low-code development can be leveraged for embedded systems. As mentioned, having patterns that generalise application developed is the great strength of low-code. 
+
+While most low-code technologies focus on business applications, as discussed, there are projects that target different systems. Node-red, for example, can be used to IoT, and RobotML for robotics. We discussed the Mendix example, but with other platforms we see this clear separation of goals in the application development. Figure XX provides and example of this structure for the Mendix platform.
+
+(Picture of the mendix structure)
+
+A similar separation can be applied to embedded systems as long as there is an underlying common structure, that is a reference architecture. Therefore, this is the topic of the next section.
+## A reference architecture for embedded systems
+
+As discussed, the reference architecture allows us to define the workflow of the low-code platform. Based on existing works, we can stipulate what a reference architecture for embedded systems looks like. (CITATION)
+
+We start from the most abstract viewpoint with a layered architecture. First, there is an abstraction of the hardware components, sensors and actuators. On top of that, lays the low-level decision making, that is, components whose goal is to coordinate the internal behavior of the system. For simple IoT devices, this can be considered enough as shown by (CITATION); however, other systems we must keep building.
+
+Above the local coordinator layer, we find the communication and information managers. These are responsible for managing and exchanging data with long-term storage or other devices in a coordinated mission. Finally, on the top layer lays the mission controller. This final layer can control multiple systems in order to complete a shared goal.
+
+While these layers are enough to describe most if not all embedded systems, simus (CITATION) discusses the concept of an “evolution manager” which is responsible for handling the changes of the system based on previous tasks as well as adaptions to current tasks. With the current interest in AI and its capabilities related to continuous improvement, we add this final component to our architecture as we think it will become more prominent in the coming years.
+
+While a theoretical reference architecture is a good starting point, it is currently a pure hypothesis. For the coming period, we will use software architecture recovery techniques and functional decomposition to extract the underlying software architecture from different open and closed source software repositories. With this, we aim to have a grounded and realistic reference architecture that does not deal with ideals but with what developers use in practice. Based on the the encountered reference architecture, it is possible to define the requirements and workflows for a generic low-code development platform for embedded systems.
+## Embedded systems patterns
+
+However, before we discuss the requirements and workflows for an embedded systems low-code development platform, we must mention patterns often used in ES development that can also be leveraged by such a platform. While a reference architecture is essential for a streamlined low-code solution, other generalisable aspects of software development can greatly facilitate the creation of such systems.
+
+These patterns are still unclear, but there is a lot of work already done in relation to communication, long-term storage, parallel task scheduling, and resource allocation. Therefore, as the practice of low-code, and its greatest strength, these patterns can be abstracted away from the user. 
+
+Naturally, a low-code approach due to the aforementioned abstractions takes finer control over these patterns. A balance between abstraction and customisation is essential to attract both new and experienced users. The end goal of using low-code is so that users do not need to think about these implementation specificities and can focus on the goal of the system itself. That is, the what and not the how as XXX would describe it.
+## User-friendliness in mind
+
+With the reference architecture and embedded development patterns defined, the research focuses on how to combine these two into a user-friendly platform. The pattern themselves are considered implementation details; nonetheless, it is important to extract their key concepts, what they represent, and make that clear to the users. 
+
+As it is the case with low-code platforms, the “low-code” is essentially a visual DSL; therefore, the research becomes on the design of this language. Based on the theoretical reference architecture, a one language per layer approach is suggested. Thus, instead of using a single DSL to represent the different layer concerns of the system, we plan to develop separate languages to simplify the interaction with the devices, the internal control, the information management, etc… As of this point, we plan to stick to one language per concern; however, based on the results from the architecture recovery, we might change this plan.
+
+As XXX (CITATION) discusses, there are key concerns when developing a visual language. These concerns become more significant when multiple languages must interact with one another. Therefore, we plan to use MetaEdit+ as inspiration and separate the visual aspect from the semantics of the DSLs. With the DSL defined textually, it is possible to focus on integrating them in a visually cohesive manner. The end goal, is to make the use of these languages seamlessly, so little mental effort is required to adapt to the development of a new layer.
+### Is low-code the right approach?
+
+A restrictive architecture seems to go against common practices from the embedded domain which is much freer than business applications or web-development for example (CITATION). Nonetheless, such an approach presents great benefits to the embedded domain.
+
+First, embedded systems are generally considered to have a higher entry barrier compared to other software domains. The restrictive hardware concerns of embedded systems are nearly inexistent in web or application development for example. In this context, a low-code approach to embedded development could lower this initial skill ceiling and attract more developers to the domain.
+
+Furthermore, 
+
+Finally, 
+## Is correctness possible?
 
 
 # Discussion
