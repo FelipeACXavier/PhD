@@ -101,12 +101,15 @@ A restrictive architecture seems to go against common practices from the embedde
 
 First, embedded systems are generally considered to have a higher entry barrier compared to other software domains. The restrictive hardware concerns of embedded systems are nearly inexistent in web or application development for example. In this context, a low-code approach to embedded development could lower this initial skill ceiling and attract more developers to the domain.
 
-Furthermore, 
+Furthermore, low-code provides an easy and accessible way of reusing software artefacts. Developers often find themselves creating their own repositories for commonly used components in embedded systems, e.g., an I2C communication class or a thread pool. While useful, this keeps the knowledge contained to a single or a small group of developers. A low-code platform makes these repositories unnecessary since such low level concepts which are usually reused are abstracted away.
 
-Finally, 
+Finally, by restricting the possible implementations of these systems, it becomes easier to verify their correctness. There is no shortage of techniques to formally verify embedded systems, be it through timing measurements or model checkin (CITATION); however, they still suffer from state-explosion problems mainly due to the sheer amount of possible actions in a system (CITATION). Thus, a low-code approach not only facilitates software development through reusability, it facilitates the development of formally correct software by limiting the possible states of the systems.
 ## Is correctness possible?
 
+As discussed above, it is easier to formally verify a system whose scope is smaller, that is, a system with a more limited set of allowed states. With the proposed approach, the correctness of these systems is not only possible but easier to achieve.
 
-# Discussion
+Related to this easiness, there is one last step in our plan which is to define a visual DSL for requirement specification. While formal methods are widespread and can be relatively easily generated, system requirements are very specific for a single system. Therefore, users still need a friendly way to define these formal requirements to be analysed. This question is still very open and not a lot has been explored on how such a language would look like; nonetheless, we found necessary to add it here to provide a clear global picture of our end goal.
 
 # Conclusion
+
+With this paper, we lay down a vision to create a low-code development platform for embedded systems.
