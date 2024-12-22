@@ -112,4 +112,8 @@ Related to this easiness, there is one last step in our plan which is to define 
 
 # Conclusion
 
-With this paper, we lay down a vision to create a low-code development platform for embedded systems.
+With this paper, we lay down a vision to create a low-code development platform for embedded systems. This technology that attracts ever more attention is still lacking in the domain of embedded systems, so we hope this paper functions as a guideline for future research in the area and summarises key concepts necessary for its full realisation. 
+
+First, naturally, existing low-code technologies must be identified and reused in order to diminish future work. Concurrently, a reference architecture that encompasses the key aspects of embedded systems must be defined. This should not only be based on theoretical idealisms, but on practical concepts used in the development of such systems.
+
+This reference architecture can finally be combined through separate DSLs for the different concerns. While different, each DSL shares a single visual workflow to minimise the learning curve of the platform. With these steps, it is possible to diminish the entry level to develop embedded systems while guaranteeing their correctness.
