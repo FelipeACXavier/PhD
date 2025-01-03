@@ -17,7 +17,7 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     // Comment this for tests
-    // baseUrl: "felipeacxavier.github.io/PhD",
+    baseUrl: "felipeacxavier.github.io/PhD",
     ignorePatterns: ["private", "templates", ".obsidian", ".github"],
     defaultDateType: "created",
     generateSocialImages: true,
