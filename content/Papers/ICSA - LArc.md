@@ -1,7 +1,7 @@
 ---
 title: ICSA - LArc
 date: 2024-12-19
-image: blue_mountain.jpg
+image: blue_mountain.webp
 position: 50% 30%
 tags:
   - Papers
